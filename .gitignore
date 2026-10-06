@@ -1,0 +1,25 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+build/
+dist/
+
+# pinned source files and the snapshot built from them: `readout fetch`, `readout snapshot`
+data/
+
+# the registry is rebuilt by `readout replay` and `readout worlds`;
+# what consumers would read from it is copied to results/readouts.jsonl
+registry/
+
+logs/
+fresh/

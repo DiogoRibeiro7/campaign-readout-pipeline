@@ -1,0 +1,58 @@
+name: reproduce
+
+# The whole pipeline from the pinned source files, into a fresh directory:
+# fetch, snapshot, parity, replay of the year under both contracts, the
+# readouts on earlier windows, the synthetic retailers and the report. The
+# tables are then compared with the committed ones. The dependencies are held
+# at the versions the committed tables were produced with.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "contracts/**"
+      - "prototype/**"
+      - "results/**"
+      - "pyproject.toml"
+      - "constraints.txt"
+      - ".github/workflows/reproduce.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reproduce-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  OMP_NUM_THREADS: "1"
+  OPENBLAS_NUM_THREADS: "1"
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: python -m pip install -e . -c constraints.txt
+      - uses: actions/cache@v6
+        with:
+          path: data/raw
+          key: source-${{ hashFiles('contracts/campaign_readout_v1.toml') }}
+      - run: readout --registry fresh/registry --results fresh/results --figures fresh/figures all
+      - run: readout --results fresh/results check --reference results
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: readout-${{ github.sha }}
+          retention-days: 90
+          path: |
+            fresh/results/
+            fresh/figures/
+            fresh/registry/*.jsonl

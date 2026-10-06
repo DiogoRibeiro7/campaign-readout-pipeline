@@ -1,0 +1,3762 @@
+{
+  "data": {
+    "households": 2469,
+    "transactions": 1469307,
+    "first_day": "2017-01-01",
+    "last_day": "2017-12-31",
+    "campaigns": 27,
+    "household_campaign_pairs": 6589,
+    "households_ever_targeted": 1559
+  },
+  "primary": {
+    "window_days": 28,
+    "history_days": 56,
+    "campaigns": [
+      {
+        "campaign": 4,
+        "type": "Type B",
+        "start": "2017-03-29",
+        "households": 81,
+        "main": {
+          "treated_mean": 276.31074074074075,
+          "untreated_mean": 134.72587102177553,
+          "raw_difference": 141.58486971896522,
+          "untargeted_households": 2388,
+          "estimates": {
+            "Regression": 26.519520616817392,
+            "Matching": 38.0855555555556,
+            "Weighting": 24.324553361394038
+          },
+          "auc": 0.8026552515664743,
+          "weighting_effective_controls": 973.0559084470676,
+          "matching_effective_controls": 73.71910112359551,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 15.657275461458147,
+              "low": -3.505303712759384,
+              "high": 56.564193730858435
+            },
+            "Weighting": {
+              "se": 16.337198067185703,
+              "low": -6.1535157227228465,
+              "high": 56.83928875539954
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0005184047547305862,
+              "Spend, weeks 5 to 8": 9.975673792318665e-05,
+              "Trips": 0.0007640121166918426,
+              "Stores": 0.002985966573750954,
+              "Private-label share": 1.9063598910734483e-05,
+              "Discount share": 0.00044001486626671127,
+              "Coupon discount": 0.0015118116542078416,
+              "Coupon redemptions": 0.0006372344115689958,
+              "Days since last trip": 0.0008736852096228012,
+              "Earlier campaigns": 0.00018413269009811355,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.003240944604442473
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.07983642888140875,
+              "Spend, weeks 5 to 8": 0.009678134553398875,
+              "Trips": 0.028200072104428455,
+              "Stores": 5.894247117547459e-06,
+              "Private-label share": 4.669040704852433e-06,
+              "Discount share": 0.01423499207590866,
+              "Coupon discount": 0.03733442325132445,
+              "Coupon redemptions": 0.0015073368430431713,
+              "Days since last trip": 0.05910177915826584,
+              "Earlier campaigns": 0.0003338610263719127,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.026222976123603355
+            },
+            "top": [
+              "Concurrent small campaigns",
+              "Stores",
+              "Coupon discount"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.5174825174825175
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0005695528405579327,
+              "Spend, weeks 5 to 8": 0.00015185976901095651,
+              "Spend, last 4 weeks (level)": 2.0025217400398406e-05,
+              "Spend, weeks 5 to 8 (level)": 5.479430021735269e-05,
+              "Trips": 0.0008886664591038081,
+              "Stores": 0.002940221027342882,
+              "Private-label share": 1.5737674425816364e-05,
+              "Discount share": 0.0005205471252121909,
+              "Coupon discount": 0.001672637057144843,
+              "Coupon redemptions": 0.0005961384696324414,
+              "Days since last trip": 0.0010002353547692861,
+              "Earlier campaigns": 0.0001994065398982395,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.0033956230811646
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.00167397244703544,
+              "Spend, weeks 5 to 8": 0.0008734645159205263,
+              "Spend, last 4 weeks (level)": 0.13397112076918713,
+              "Spend, weeks 5 to 8 (level)": 0.07962483333026085,
+              "Trips": 0.0005715968901411604,
+              "Stores": 0.00010430900213764303,
+              "Private-label share": 0.00018531866627894913,
+              "Discount share": 0.0011118720490246798,
+              "Coupon discount": 0.0017460980188541027,
+              "Coupon redemptions": 8.841203785363215e-06,
+              "Days since last trip": 0.0008586074555233325,
+              "Earlier campaigns": 0.00010314744450887488,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.007818462585250471
+            },
+            "top": [
+              "Concurrent small campaigns",
+              "Stores",
+              "Coupon discount"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.11208791208791209
+          }
+        },
+        "placebo": {
+          "treated_mean": 266.6228395061728,
+          "untreated_mean": 136.3402219430486,
+          "raw_difference": 130.2826175631242,
+          "untargeted_households": 2388,
+          "estimates": {
+            "Regression": 1.2904899576960225,
+            "Matching": 14.554504548408005,
+            "Weighting": 1.10628215833583
+          },
+          "auc": 0.8032652976818248,
+          "weighting_effective_controls": 993.3545079271039,
+          "matching_effective_controls": 69.79542989117121,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 13.571048799402226,
+              "low": -25.598537824977836,
+              "high": 27.222423641458338
+            },
+            "Weighting": {
+              "se": 13.993863819538541,
+              "low": -25.977763715427137,
+              "high": 28.390171948922823
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 1.2904899576960225,
+              "Matching": 14.554504548408005,
+              "Weighting": 1.10628215833583
+            },
+            "Without campaign history": {
+              "Regression": 1.4784158826811042,
+              "Matching": -41.60875918112208,
+              "Weighting": 1.205960120695579
+            },
+            "Without past spending": {
+              "Regression": 16.49547066148318,
+              "Matching": -0.5611744639376752,
+              "Weighting": -10.215364190583273
+            },
+            "Campaign history only": {
+              "Regression": 120.42026286205842,
+              "Matching": 119.51775905786278,
+              "Weighting": 120.09964846415735
+            }
+          }
+        }
+      },
+      {
+        "campaign": 5,
+        "type": "Type B",
+        "start": "2017-04-03",
+        "households": 166,
+        "main": {
+          "treated_mean": 335.44710843373497,
+          "untreated_mean": 124.5053842813721,
+          "raw_difference": 210.94172415236287,
+          "untargeted_households": 2303,
+          "estimates": {
+            "Regression": 25.834497372055488,
+            "Matching": 57.38357228915663,
+            "Weighting": 3.948848397181223
+          },
+          "auc": 0.8388613071478271,
+          "weighting_effective_controls": 404.4977853755948,
+          "matching_effective_controls": 117.20969800085072,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 11.698933097252677,
+              "low": 3.851250524560521,
+              "high": 49.81269582473115
+            },
+            "Weighting": {
+              "se": 24.353407142982274,
+              "low": -52.606717240451935,
+              "high": 42.36274417461256
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.007024440337789955,
+              "Spend, weeks 5 to 8": 0.0007831156732993082,
+              "Trips": 0.0012023438037950444,
+              "Stores": 0.0011575965596574336,
+              "Private-label share": 5.023692682785322e-05,
+              "Discount share": 0.0036858301670702562,
+              "Coupon discount": 0.0034569055529451585,
+              "Coupon redemptions": 0.0020274744924593927,
+              "Days since last trip": 0.005003067159030041,
+              "Earlier campaigns": 3.375588359532392e-05,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.0130248368330736
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.09164955507947767,
+              "Spend, weeks 5 to 8": 0.009172346949128102,
+              "Trips": 0.028620884773160656,
+              "Stores": 0.00037278495595395963,
+              "Private-label share": 0.00011216939923980276,
+              "Discount share": 0.012906416329876047,
+              "Coupon discount": 0.028576885275632076,
+              "Coupon redemptions": 0.0015729272477280863,
+              "Days since last trip": 0.061860979109520924,
+              "Earlier campaigns": 0.0017466615394815816,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.014053656972502885
+            },
+            "top": [
+              "Concurrent small campaigns",
+              "Spend, last 4 weeks",
+              "Days since last trip"
+            ],
+            "top_share_below_median_outcome": 0.0,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.7692307692307694
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0006876316588905234,
+              "Spend, weeks 5 to 8": 0.0008670187004691167,
+              "Spend, last 4 weeks (level)": 0.0004989196127785467,
+              "Spend, weeks 5 to 8 (level)": 0.012120599759099047,
+              "Trips": 5.59886720640986e-05,
+              "Stores": 0.001558426702790921,
+              "Private-label share": 0.0001427270459003638,
+              "Discount share": 0.0012722555667525092,
+              "Coupon discount": 0.00044686751785240775,
+              "Coupon redemptions": 0.002746189113355429,
+              "Days since last trip": 0.00026423671424946024,
+              "Earlier campaigns": 1.365552323372289e-07,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.010051757682837071
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0007303353218045444,
+              "Spend, weeks 5 to 8": 0.0033418217012056097,
+              "Spend, last 4 weeks (level)": 0.15129999107464281,
+              "Spend, weeks 5 to 8 (level)": 0.08626168071878978,
+              "Trips": 0.0025476916555919756,
+              "Stores": 8.293073939233664e-07,
+              "Private-label share": 0.00012482136706636505,
+              "Discount share": 0.0005843657692541835,
+              "Coupon discount": 0.00046326572511045516,
+              "Coupon redemptions": 1.894549521068382e-05,
+              "Days since last trip": 9.65938180508019e-05,
+              "Earlier campaigns": 0.0002625984414263061,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.007396509357319231
+            },
+            "top": [
+              "Spend, weeks 5 to 8 (level)",
+              "Concurrent small campaigns",
+              "Coupon redemptions"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.3626373626373627
+          }
+        },
+        "placebo": {
+          "treated_mean": 333.0766265060241,
+          "untreated_mean": 124.30739904472428,
+          "raw_difference": 208.76922746129986,
+          "untargeted_households": 2303,
+          "estimates": {
+            "Regression": 13.379149056641824,
+            "Matching": -29.46596385542165,
+            "Weighting": -9.406107607312151
+          },
+          "auc": 0.8397192765852817,
+          "weighting_effective_controls": 392.3180457506816,
+          "matching_effective_controls": 110.224,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 13.607777353567494,
+              "low": -12.71176016231819,
+              "high": 42.25514396597029
+            },
+            "Weighting": {
+              "se": 35.723003584378176,
+              "low": -91.48902913047613,
+              "high": 41.66744616523045
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 13.379149056641824,
+              "Matching": -29.46596385542165,
+              "Weighting": -9.406107607312151
+            },
+            "Without campaign history": {
+              "Regression": 14.409351209574933,
+              "Matching": 0.9757228915663063,
+              "Weighting": -15.375351795727681
+            },
+            "Without past spending": {
+              "Regression": 87.71152118316304,
+              "Matching": 96.86493975903619,
+              "Weighting": 64.89474427071843
+            },
+            "Campaign history only": {
+              "Regression": 191.50321750118619,
+              "Matching": 192.76452721560537,
+              "Weighting": 193.1582071513476
+            }
+          }
+        }
+      },
+      {
+        "campaign": 6,
+        "type": "Type C",
+        "start": "2017-04-19",
+        "households": 65,
+        "main": {
+          "treated_mean": 417.82,
+          "untreated_mean": 136.81279950083194,
+          "raw_difference": 281.00720049916805,
+          "untargeted_households": 2404,
+          "estimates": {
+            "Regression": 35.553778868550985,
+            "Matching": -35.89861538461537,
+            "Weighting": 37.797842029645096
+          },
+          "auc": 0.8978369384359401,
+          "weighting_effective_controls": 334.29212504612946,
+          "matching_effective_controls": 54.87012987012987,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 20.774600063389467,
+              "low": -2.5590029012879563,
+              "high": 76.33960386835712
+            },
+            "Weighting": {
+              "se": 22.01291978126324,
+              "low": -5.434418102371659,
+              "high": 80.23846079029383
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0038074887515928604,
+              "Spend, weeks 5 to 8": 0.0010701392015409173,
+              "Trips": 0.0009402168273210465,
+              "Stores": 0.0032192985914002515,
+              "Private-label share": 0.0007923846324345771,
+              "Discount share": 0.002119289308693771,
+              "Coupon discount": 0.004248751271300691,
+              "Coupon redemptions": 0.00015298919409081763,
+              "Days since last trip": 0.0029330704496749165,
+              "Earlier campaigns": 1.8246737663365602e-08,
+              "Concurrent large campaigns": 2.0987058357086918e-05,
+              "Concurrent small campaigns": 0.015556850188819218
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.09764091899771055,
+              "Spend, weeks 5 to 8": 0.012850577207565245,
+              "Trips": 0.02733905852865326,
+              "Stores": 0.00015220302634855513,
+              "Private-label share": 4.505390463843478e-05,
+              "Discount share": 0.016514384293737323,
+              "Coupon discount": 0.03638147930106689,
+              "Coupon redemptions": 0.002927139809269028,
+              "Days since last trip": 0.06287603981747508,
+              "Earlier campaigns": 4.932016662167089e-06,
+              "Concurrent large campaigns": 9.5170734242499e-05,
+              "Concurrent small campaigns": 0.014186018561737474
+            },
+            "top": [
+              "Concurrent small campaigns",
+              "Coupon discount",
+              "Spend, last 4 weeks"
+            ],
+            "top_share_below_median_outcome": 0.0,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.6853146853146854
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 5.812274435573959e-08,
+              "Spend, weeks 5 to 8": 2.7577501714175206e-06,
+              "Spend, last 4 weeks (level)": 0.002420437778710602,
+              "Spend, weeks 5 to 8 (level)": 0.00340189805593796,
+              "Trips": 1.4030877779833792e-05,
+              "Stores": 0.00308717520255347,
+              "Private-label share": 0.0009003320563809987,
+              "Discount share": 0.000594096827088722,
+              "Coupon discount": 0.0011829613641953151,
+              "Coupon redemptions": 2.274569782447525e-05,
+              "Days since last trip": 7.534619505300292e-06,
+              "Earlier campaigns": 2.9148920143506596e-06,
+              "Concurrent large campaigns": 0.0001244463559537645,
+              "Concurrent small campaigns": 0.012362530799236661
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 2.4362210577192935e-05,
+              "Spend, weeks 5 to 8": 0.004903473932178326,
+              "Spend, last 4 weeks (level)": 0.10066225606913132,
+              "Spend, weeks 5 to 8 (level)": 0.12573496205906196,
+              "Trips": 0.0007353263459544292,
+              "Stores": 0.0004772631032042579,
+              "Private-label share": 1.6386218252111386e-05,
+              "Discount share": 0.0006852186192299278,
+              "Coupon discount": 0.002754827687766549,
+              "Coupon redemptions": 0.0005029610320506882,
+              "Days since last trip": 0.00016341731168047056,
+              "Earlier campaigns": 0.00017607703319484318,
+              "Concurrent large campaigns": 0.00277730904438172,
+              "Concurrent small campaigns": 0.004700809776956035
+            },
+            "top": [
+              "Concurrent small campaigns",
+              "Spend, weeks 5 to 8 (level)",
+              "Stores"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.45054945054945056
+          }
+        },
+        "placebo": {
+          "treated_mean": 403.8326153846154,
+          "untreated_mean": 133.0424958402662,
+          "raw_difference": 270.7901195443492,
+          "untargeted_households": 2404,
+          "estimates": {
+            "Regression": 24.120127010896255,
+            "Matching": -11.850923076923095,
+            "Weighting": 14.388890222976272
+          },
+          "auc": 0.9219185972097785,
+          "weighting_effective_controls": 291.16320249878186,
+          "matching_effective_controls": 50.903614457831324,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 20.44832766479202,
+              "low": -14.779485957026829,
+              "high": 64.06111469916091
+            },
+            "Weighting": {
+              "se": 22.28887878080374,
+              "low": -28.089026163275896,
+              "high": 59.03544839857683
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 24.120127010896255,
+              "Matching": -11.850923076923095,
+              "Weighting": 14.388890222976272
+            },
+            "Without campaign history": {
+              "Regression": 25.605785118187818,
+              "Matching": 60.11476923076924,
+              "Weighting": 16.963767725239506
+            },
+            "Without past spending": {
+              "Regression": 101.59027584574476,
+              "Matching": 74.30892307692307,
+              "Weighting": 44.45089794754779
+            },
+            "Campaign history only": {
+              "Regression": 227.2223739435508,
+              "Matching": 212.99528211750788,
+              "Weighting": 227.21520848378046
+            }
+          }
+        }
+      },
+      {
+        "campaign": 7,
+        "type": "Type B",
+        "start": "2017-04-24",
+        "households": 198,
+        "main": {
+          "treated_mean": 306.1565151515152,
+          "untreated_mean": 132.6946587406429,
+          "raw_difference": 173.4618564108723,
+          "untargeted_households": 2271,
+          "estimates": {
+            "Regression": 24.24466954081469,
+            "Matching": 47.13266666666675,
+            "Weighting": 22.70827749772343
+          },
+          "auc": 0.8360520662370068,
+          "weighting_effective_controls": 678.5388140038131,
+          "matching_effective_controls": 163.8963210702341,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 9.413859911721543,
+              "low": 6.18993589796783,
+              "high": 43.40576113941867
+            },
+            "Weighting": {
+              "se": 10.585892226915576,
+              "low": 2.6576642553894874,
+              "high": 44.29597278226618
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.003074158288631741,
+              "Spend, weeks 5 to 8": 2.5546199757316563e-06,
+              "Trips": 0.0020435158923741265,
+              "Stores": 4.976876905735866e-06,
+              "Private-label share": 0.0004178016327476103,
+              "Discount share": 0.0032895707990742112,
+              "Coupon discount": 0.0005529333012961447,
+              "Coupon redemptions": 0.0010627655045410173,
+              "Days since last trip": 0.0021884250015148763,
+              "Earlier campaigns": 0.0007203267223552436,
+              "Concurrent large campaigns": 0.01614551984672342,
+              "Concurrent small campaigns": 0.00785229627912879
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.09503787082399107,
+              "Spend, weeks 5 to 8": 0.011255029779779631,
+              "Trips": 0.027612428654399366,
+              "Stores": 3.5786714036443843e-07,
+              "Private-label share": 0.00023024789125197253,
+              "Discount share": 0.012339318001654461,
+              "Coupon discount": 0.04659405403777055,
+              "Coupon redemptions": 0.0017708276040813902,
+              "Days since last trip": 0.0672427578445442,
+              "Earlier campaigns": 0.00018992690558358881,
+              "Concurrent large campaigns": 0.0004128783213041192,
+              "Concurrent small campaigns": 0.015519717666382464
+            },
+            "top": [
+              "Concurrent large campaigns",
+              "Concurrent small campaigns",
+              "Discount share"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.3846153846153847
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0003270373725343054,
+              "Spend, weeks 5 to 8": 2.197651749052009e-05,
+              "Spend, last 4 weeks (level)": 0.001579621826396868,
+              "Spend, weeks 5 to 8 (level)": 0.00011436091813960923,
+              "Trips": 0.0012264438628544888,
+              "Stores": 3.288214904652342e-06,
+              "Private-label share": 0.00039928483437019427,
+              "Discount share": 0.002631335755409596,
+              "Coupon discount": 0.0002441319576147403,
+              "Coupon redemptions": 0.0009030369363420583,
+              "Days since last trip": 0.0005376796556124147,
+              "Earlier campaigns": 0.0007785948769232143,
+              "Concurrent large campaigns": 0.01679092526353122,
+              "Concurrent small campaigns": 0.006649714974281503
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0006045477222366153,
+              "Spend, weeks 5 to 8": 0.0026464089803427105,
+              "Spend, last 4 weeks (level)": 0.12209308361259524,
+              "Spend, weeks 5 to 8 (level)": 0.09980419595064852,
+              "Trips": 0.0004895431890425829,
+              "Stores": 1.3835377412039033e-05,
+              "Private-label share": 0.0001081447160326408,
+              "Discount share": 3.956162857626419e-06,
+              "Coupon discount": 0.0065636229672881375,
+              "Coupon redemptions": 8.926774987311637e-06,
+              "Days since last trip": 0.00038807316215286666,
+              "Earlier campaigns": 4.0947425876200935e-05,
+              "Concurrent large campaigns": 0.0032206581266827333,
+              "Concurrent small campaigns": 0.0022776898020429467
+            },
+            "top": [
+              "Concurrent large campaigns",
+              "Concurrent small campaigns",
+              "Discount share"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": -0.03736263736263736
+          }
+        },
+        "placebo": {
+          "treated_mean": 293.95025252525255,
+          "untreated_mean": 127.00932188463234,
+          "raw_difference": 166.9409306406202,
+          "untargeted_households": 2271,
+          "estimates": {
+            "Regression": 27.133903716745642,
+            "Matching": 37.17661616161621,
+            "Weighting": 25.126252187289197
+          },
+          "auc": 0.8155398102557944,
+          "weighting_effective_controls": 759.4210217238866,
+          "matching_effective_controls": 139.0212765957447,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 9.957368149880033,
+              "low": 7.570926470242637,
+              "high": 46.567506156717805
+            },
+            "Weighting": {
+              "se": 11.459213308682125,
+              "low": 2.471151592744555,
+              "high": 46.524451061936865
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 27.133903716745642,
+              "Matching": 37.17661616161621,
+              "Weighting": 25.126252187289197
+            },
+            "Without campaign history": {
+              "Regression": 30.24146418231429,
+              "Matching": 31.447929292929302,
+              "Weighting": 26.72028141964398
+            },
+            "Without past spending": {
+              "Regression": 48.51524792171619,
+              "Matching": 37.53313131313138,
+              "Weighting": 19.11579023042964
+            },
+            "Campaign history only": {
+              "Regression": 120.13808793457339,
+              "Matching": 113.12144517597349,
+              "Weighting": 115.27885598336951
+            }
+          }
+        }
+      },
+      {
+        "campaign": 8,
+        "type": "Type A",
+        "start": "2017-05-08",
+        "households": 1076,
+        "main": {
+          "treated_mean": 230.67346654275093,
+          "untreated_mean": 82.09709260588657,
+          "raw_difference": 148.57637393686434,
+          "untargeted_households": 1393,
+          "estimates": {
+            "Regression": 15.70275354197126,
+            "Matching": -0.2977926960401476,
+            "Weighting": -67.51630984163114
+          },
+          "auc": 0.8642028517521223,
+          "weighting_effective_controls": 7.793301323656259,
+          "matching_effective_controls": 154.692392066084,
+          "treated_score_above_0.9": 0.1775092936802974,
+          "bootstrap": {
+            "Regression": {
+              "se": 5.638911365668525,
+              "low": 4.907539068820166,
+              "high": 26.900661376781933
+            },
+            "Weighting": {
+              "se": 41.422311911543304,
+              "low": -171.28914368398733,
+              "high": -4.6710750710682545
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.01287054619504558,
+              "Spend, weeks 5 to 8": 0.013063669719404526,
+              "Trips": 0.016604429274814494,
+              "Stores": 0.00011753254443330321,
+              "Private-label share": 0.00033514418726812023,
+              "Discount share": 0.00013303075699776877,
+              "Coupon discount": 0.0006930866031399288,
+              "Coupon redemptions": 0.00030940837335441287,
+              "Days since last trip": 0.006498806584786852,
+              "Earlier campaigns": 0.03923160923248517,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.0020978342468781917
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.07485663141688295,
+              "Spend, weeks 5 to 8": 0.007731065047597938,
+              "Trips": 0.02051796700153482,
+              "Stores": 0.00013142714830977176,
+              "Private-label share": 4.96799067299019e-05,
+              "Discount share": 0.012390422446970866,
+              "Coupon discount": 0.06040617112186464,
+              "Coupon redemptions": 2.9570503642747753e-06,
+              "Days since last trip": 0.048060847637866215,
+              "Earlier campaigns": 0.0021285758750823605,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.006119383170702648
+            },
+            "top": [
+              "Earlier campaigns",
+              "Trips",
+              "Spend, weeks 5 to 8"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.5174825174825175
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.01567186792674967,
+              "Spend, weeks 5 to 8": 0.010899137008324261,
+              "Spend, last 4 weeks (level)": 0.0025022669420752307,
+              "Spend, weeks 5 to 8 (level)": 1.223186979609148e-05,
+              "Trips": 0.018883909776141194,
+              "Stores": 0.00010643032607262609,
+              "Private-label share": 0.00033777025201425434,
+              "Discount share": 2.6385123114407485e-05,
+              "Coupon discount": 0.0002198305509105316,
+              "Coupon redemptions": 0.0003037060131313639,
+              "Days since last trip": 0.009714059731044672,
+              "Earlier campaigns": 0.03974028196205483,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.002407718394301005
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0040288300457691235,
+              "Spend, weeks 5 to 8": 0.0003870165199840571,
+              "Spend, last 4 weeks (level)": 0.18764121357436775,
+              "Spend, weeks 5 to 8 (level)": 0.07537596867819593,
+              "Trips": 0.0004024488483423545,
+              "Stores": 0.0013579099805194142,
+              "Private-label share": 6.20283862870832e-05,
+              "Discount share": 0.0011424755425729033,
+              "Coupon discount": 0.0024513339648379756,
+              "Coupon redemptions": 0.0010398227443428826,
+              "Days since last trip": 0.0016411547949031248,
+              "Earlier campaigns": 0.001147426076392173,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.0009383862442316686
+            },
+            "top": [
+              "Earlier campaigns",
+              "Trips",
+              "Spend, last 4 weeks"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.03736263736263736
+          }
+        },
+        "placebo": {
+          "treated_mean": 226.5482249070632,
+          "untreated_mean": 77.74083273510409,
+          "raw_difference": 148.80739217195912,
+          "untargeted_households": 1393,
+          "estimates": {
+            "Regression": 15.994130878941466,
+            "Matching": -26.93559458189125,
+            "Weighting": -62.41865338695547
+          },
+          "auc": 0.8770268629392315,
+          "weighting_effective_controls": 4.118689565820181,
+          "matching_effective_controls": 130.761007905908,
+          "treated_score_above_0.9": 0.22304832713754646,
+          "bootstrap": {
+            "Regression": {
+              "se": 5.897092411202746,
+              "low": 4.0962673090158015,
+              "high": 27.350351741776052
+            },
+            "Weighting": {
+              "se": 77.6774294066056,
+              "low": -282.477263205795,
+              "high": 10.973241677690083
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 15.994130878941466,
+              "Matching": -26.93559458189125,
+              "Weighting": -62.41865338695547
+            },
+            "Without campaign history": {
+              "Regression": 19.957100759851528,
+              "Matching": -2.677108811228976,
+              "Weighting": -14.820670098753794
+            },
+            "Without past spending": {
+              "Regression": 19.112350955528747,
+              "Matching": -61.646161531997365,
+              "Weighting": -138.8889385569182
+            },
+            "Campaign history only": {
+              "Regression": 106.14338754909387,
+              "Matching": 57.751457263138775,
+              "Weighting": -19.438862447950783
+            }
+          }
+        }
+      },
+      {
+        "campaign": 9,
+        "type": "Type B",
+        "start": "2017-05-31",
+        "households": 176,
+        "main": {
+          "treated_mean": 229.0602840909091,
+          "untreated_mean": 133.6946969036197,
+          "raw_difference": 95.3655871872894,
+          "untargeted_households": 2293,
+          "estimates": {
+            "Regression": -12.48892207588267,
+            "Matching": -34.95448863636361,
+            "Weighting": -14.421174594647681
+          },
+          "auc": 0.7804037981207628,
+          "weighting_effective_controls": 962.9694165959721,
+          "matching_effective_controls": 144.74766355140187,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 9.84460896286792,
+              "low": -31.334271451248025,
+              "high": 6.91333489530142
+            },
+            "Weighting": {
+              "se": 10.676665207277706,
+              "low": -35.03127318644854,
+              "high": 6.517686013508391
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.002314966975099487,
+              "Spend, weeks 5 to 8": 0.0028217050653299236,
+              "Trips": 0.0010707292756873916,
+              "Stores": 0.000493997542393054,
+              "Private-label share": 0.0002883482505849243,
+              "Discount share": 0.0012217846931531955,
+              "Coupon discount": 0.0021550385274006186,
+              "Coupon redemptions": 9.986830097268991e-05,
+              "Days since last trip": 0.00012936938251128754,
+              "Earlier campaigns": 0.01154553460531308,
+              "Concurrent large campaigns": 1.042898221719824e-05,
+              "Concurrent small campaigns": 0.0
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.08606972643883402,
+              "Spend, weeks 5 to 8": 0.007593249797490855,
+              "Trips": 0.027038267540322833,
+              "Stores": 5.4158606651512335e-06,
+              "Private-label share": 0.0002571097011359855,
+              "Discount share": 0.010051808085684262,
+              "Coupon discount": 0.025264352982412037,
+              "Coupon redemptions": 0.0021939286238304608,
+              "Days since last trip": 0.06071890361620902,
+              "Earlier campaigns": 0.009224821287548373,
+              "Concurrent large campaigns": 4.2521106913807134e-05,
+              "Concurrent small campaigns": 0.0
+            },
+            "top": [
+              "Earlier campaigns",
+              "Spend, weeks 5 to 8",
+              "Spend, last 4 weeks"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.5314685314685316
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0011716288791380537,
+              "Spend, weeks 5 to 8": 0.0038399144569138083,
+              "Spend, last 4 weeks (level)": 0.00037852126677652827,
+              "Spend, weeks 5 to 8 (level)": 0.0010373275264951847,
+              "Trips": 0.0009261254138327833,
+              "Stores": 0.0004987124454290868,
+              "Private-label share": 0.000294365682536249,
+              "Discount share": 0.001422524983651009,
+              "Coupon discount": 0.0023574887407212474,
+              "Coupon redemptions": 0.00010982094600701947,
+              "Days since last trip": 0.00012251906899103578,
+              "Earlier campaigns": 0.011843069504933527,
+              "Concurrent large campaigns": 5.177085238612347e-06,
+              "Concurrent small campaigns": 0.0
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0016834379527825417,
+              "Spend, weeks 5 to 8": 0.0009000700127368243,
+              "Spend, last 4 weeks (level)": 0.15364151597239661,
+              "Spend, weeks 5 to 8 (level)": 0.05526525425408992,
+              "Trips": 0.00013811025944991722,
+              "Stores": 0.0006456211049501331,
+              "Private-label share": 2.654101493375839e-05,
+              "Discount share": 2.8632399044489966e-05,
+              "Coupon discount": 0.004007295351689857,
+              "Coupon redemptions": 4.2816816417409004e-05,
+              "Days since last trip": 0.0005068279628558854,
+              "Earlier campaigns": 0.0016408173599506914,
+              "Concurrent large campaigns": 0.002900390800970696,
+              "Concurrent small campaigns": 0.0
+            },
+            "top": [
+              "Earlier campaigns",
+              "Spend, weeks 5 to 8",
+              "Coupon discount"
+            ],
+            "top_share_below_median_outcome": 0.0,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.3450549450549451
+          }
+        },
+        "placebo": {
+          "treated_mean": 260.8546022727273,
+          "untreated_mean": 139.37696031399912,
+          "raw_difference": 121.47764195872816,
+          "untargeted_households": 2293,
+          "estimates": {
+            "Regression": 21.210618096216596,
+            "Matching": 28.655965909090924,
+            "Weighting": 22.059815547287883
+          },
+          "auc": 0.7881720057090751,
+          "weighting_effective_controls": 931.3904266070398,
+          "matching_effective_controls": 146.11320754716982,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 10.516972813256581,
+              "low": 1.5746666903666515,
+              "high": 42.36941734580469
+            },
+            "Weighting": {
+              "se": 11.387101450277195,
+              "low": -0.09944487921587632,
+              "high": 44.81878044381289
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 21.210618096216596,
+              "Matching": 28.655965909090924,
+              "Weighting": 22.059815547287883
+            },
+            "Without campaign history": {
+              "Regression": 24.566319623829816,
+              "Matching": 30.007954545454538,
+              "Weighting": 23.04363216727674
+            },
+            "Without past spending": {
+              "Regression": 22.46171936869037,
+              "Matching": 24.310511363636408,
+              "Weighting": 17.062481548150913
+            },
+            "Campaign history only": {
+              "Regression": 49.07768378294993,
+              "Matching": 49.54712912729758,
+              "Weighting": 48.85126480535686
+            }
+          }
+        }
+      },
+      {
+        "campaign": 10,
+        "type": "Type B",
+        "start": "2017-06-28",
+        "households": 123,
+        "main": {
+          "treated_mean": 312.74333333333334,
+          "untreated_mean": 136.82312872975277,
+          "raw_difference": 175.92020460358057,
+          "untargeted_households": 2346,
+          "estimates": {
+            "Regression": 4.33257849224676,
+            "Matching": -10.808021680216768,
+            "Weighting": 3.083726714513091
+          },
+          "auc": 0.8462163585830231,
+          "weighting_effective_controls": 480.7544521450483,
+          "matching_effective_controls": 100.63636363636363,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 14.99028206854357,
+              "low": -25.609729396982853,
+              "high": 33.14099273360322
+            },
+            "Weighting": {
+              "se": 18.17873457971532,
+              "low": -35.42567684733805,
+              "high": 37.61305664995714
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0007325053263861297,
+              "Spend, weeks 5 to 8": 0.00015742642491233056,
+              "Trips": 4.77349623565095e-05,
+              "Stores": 1.1469618382177182e-05,
+              "Private-label share": 0.0008365947376735842,
+              "Discount share": 0.0015750759324765066,
+              "Coupon discount": 0.005808889135918448,
+              "Coupon redemptions": 8.988163458430172e-05,
+              "Days since last trip": 0.0006930094820906513,
+              "Earlier campaigns": 0.012757663917711874,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.008127893022646571
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0805950930035557,
+              "Spend, weeks 5 to 8": 0.010960396889878187,
+              "Trips": 0.02658734948037371,
+              "Stores": 0.001205959167509631,
+              "Private-label share": 1.8702468170075405e-05,
+              "Discount share": 0.010530406976738732,
+              "Coupon discount": 0.018089203695851458,
+              "Coupon redemptions": 0.00023308038954431392,
+              "Days since last trip": 0.05716013784788839,
+              "Earlier campaigns": 1.0675815861532743e-05,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.019007798148702414
+            },
+            "top": [
+              "Earlier campaigns",
+              "Concurrent small campaigns",
+              "Coupon discount"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.11188811188811189
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0001333269594752035,
+              "Spend, weeks 5 to 8": 1.5691397693297408e-05,
+              "Spend, last 4 weeks (level)": 0.001548769423778435,
+              "Spend, weeks 5 to 8 (level)": 0.0011029046538588551,
+              "Trips": 0.00018884933054203756,
+              "Stores": 1.4161296946552156e-05,
+              "Private-label share": 0.001035044278217025,
+              "Discount share": 0.0007463278347942306,
+              "Coupon discount": 0.00345258502390019,
+              "Coupon redemptions": 2.6490200052280865e-05,
+              "Days since last trip": 6.872274095446593e-05,
+              "Earlier campaigns": 0.012946467418652192,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.00609053822870943
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 7.673600056166839e-05,
+              "Spend, weeks 5 to 8": 0.0005138242481555737,
+              "Spend, last 4 weeks (level)": 0.11373458714670713,
+              "Spend, weeks 5 to 8 (level)": 0.08575287457307074,
+              "Trips": 0.00027592576491170206,
+              "Stores": 0.002921603969171992,
+              "Private-label share": 0.001221778068171513,
+              "Discount share": 0.00046924239124483615,
+              "Coupon discount": 0.000624973586001436,
+              "Coupon redemptions": 0.0004024296551947518,
+              "Days since last trip": 0.0002926277532279727,
+              "Earlier campaigns": 0.00030687023061904924,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.003031999888283848
+            },
+            "top": [
+              "Earlier campaigns",
+              "Concurrent small campaigns",
+              "Coupon discount"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.44175824175824174
+          }
+        },
+        "placebo": {
+          "treated_mean": 319.68845528455284,
+          "untreated_mean": 131.09755754475702,
+          "raw_difference": 188.59089773979582,
+          "untargeted_households": 2346,
+          "estimates": {
+            "Regression": 11.311192981377891,
+            "Matching": 28.751571815718194,
+            "Weighting": 14.137439766891475
+          },
+          "auc": 0.8410527519597447,
+          "weighting_effective_controls": 558.0425999245133,
+          "matching_effective_controls": 95.55157894736841,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 14.724772389438048,
+              "low": -17.8115770688167,
+              "high": 39.11444961973716
+            },
+            "Weighting": {
+              "se": 17.434548655135693,
+              "low": -22.9781269218995,
+              "high": 46.53267488482036
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 11.311192981377891,
+              "Matching": 28.751571815718194,
+              "Weighting": 14.137439766891475
+            },
+            "Without campaign history": {
+              "Regression": 18.385187756636785,
+              "Matching": 15.452676575203213,
+              "Weighting": 12.019172570367232
+            },
+            "Without past spending": {
+              "Regression": 57.23256475727216,
+              "Matching": 33.472628726287326,
+              "Weighting": 40.262719603511584
+            },
+            "Campaign history only": {
+              "Regression": 104.56106120147916,
+              "Matching": 103.14909904663628,
+              "Weighting": 106.98097504136572
+            }
+          }
+        }
+      },
+      {
+        "campaign": 11,
+        "type": "Type B",
+        "start": "2017-07-12",
+        "households": 214,
+        "main": {
+          "treated_mean": 300.59593457943924,
+          "untreated_mean": 128.66656319290465,
+          "raw_difference": 171.9293713865346,
+          "untargeted_households": 2255,
+          "estimates": {
+            "Regression": 7.605924436071292,
+            "Matching": -6.283037383177543,
+            "Weighting": 0.6003679615479314
+          },
+          "auc": 0.8583272893051785,
+          "weighting_effective_controls": 518.3578361370187,
+          "matching_effective_controls": 148.6883116883117,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 11.062958280465473,
+              "low": -14.136554829418463,
+              "high": 28.75896784496985
+            },
+            "Weighting": {
+              "se": 13.505263239927993,
+              "low": -25.59719585359371,
+              "high": 27.260691735225073
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0036870642497190626,
+              "Spend, weeks 5 to 8": 4.998155980006704e-06,
+              "Trips": 0.003742468221764531,
+              "Stores": 0.0012384922293027798,
+              "Private-label share": 0.00021171661385401176,
+              "Discount share": 1.9473762611318313e-06,
+              "Coupon discount": 0.0006348345651226394,
+              "Coupon redemptions": 0.0013210839560252414,
+              "Days since last trip": 0.00699207824255607,
+              "Earlier campaigns": 0.021448178531865276,
+              "Concurrent large campaigns": 0.00714984883254178,
+              "Concurrent small campaigns": 0.002843315051706996
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.08282719773934223,
+              "Spend, weeks 5 to 8": 0.007836828104800823,
+              "Trips": 0.023802648806415173,
+              "Stores": 0.0007293439035428714,
+              "Private-label share": 0.00039157456714802294,
+              "Discount share": 0.012882313371896142,
+              "Coupon discount": 0.004543208496846615,
+              "Coupon redemptions": 0.0056856262761085284,
+              "Days since last trip": 0.050537262196095396,
+              "Earlier campaigns": 0.005035253530459322,
+              "Concurrent large campaigns": 0.0010115388638042226,
+              "Concurrent small campaigns": 0.025732376551409433
+            },
+            "top": [
+              "Earlier campaigns",
+              "Concurrent large campaigns",
+              "Days since last trip"
+            ],
+            "top_share_below_median_outcome": 0.6666666666666666,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.20979020979020982
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0006552671392995676,
+              "Spend, weeks 5 to 8": 0.0018087352157197048,
+              "Spend, last 4 weeks (level)": 9.551235799820344e-06,
+              "Spend, weeks 5 to 8 (level)": 0.00974217564200548,
+              "Trips": 0.0014135016354253358,
+              "Stores": 0.0016620900221647223,
+              "Private-label share": 0.0001402610634811513,
+              "Discount share": 0.0004769694181529462,
+              "Coupon discount": 0.0022195344540614946,
+              "Coupon redemptions": 0.000983150282991982,
+              "Days since last trip": 0.0020625185739585094,
+              "Earlier campaigns": 0.020294749592722518,
+              "Concurrent large campaigns": 0.00749580144349691,
+              "Concurrent small campaigns": 0.005097055487566682
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 5.574621393846823e-05,
+              "Spend, weeks 5 to 8": 0.0007386268747065741,
+              "Spend, last 4 weeks (level)": 0.13264645436255507,
+              "Spend, weeks 5 to 8 (level)": 0.07620072087490108,
+              "Trips": 0.0002870324644784453,
+              "Stores": 0.00036479308550356617,
+              "Private-label share": 0.001964014043917303,
+              "Discount share": 0.00040936853283563956,
+              "Coupon discount": 0.003684921845157181,
+              "Coupon redemptions": 0.004801014317485738,
+              "Days since last trip": 4.843274792289603e-05,
+              "Earlier campaigns": 0.004265812878008383,
+              "Concurrent large campaigns": 0.004533623515179436,
+              "Concurrent small campaigns": 0.002745142511741317
+            },
+            "top": [
+              "Earlier campaigns",
+              "Spend, weeks 5 to 8 (level)",
+              "Concurrent large campaigns"
+            ],
+            "top_share_below_median_outcome": 0.0,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.2
+          }
+        },
+        "placebo": {
+          "treated_mean": 300.8352336448598,
+          "untreated_mean": 128.82062527716187,
+          "raw_difference": 172.01460836769792,
+          "untargeted_households": 2255,
+          "estimates": {
+            "Regression": -1.5817196429061802,
+            "Matching": -5.879813084112129,
+            "Weighting": -12.052593794269796
+          },
+          "auc": 0.849603166380007,
+          "weighting_effective_controls": 553.51068965918,
+          "matching_effective_controls": 156.83561643835617,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 11.495758041394312,
+              "low": -24.02333467405197,
+              "high": 20.929268597213657
+            },
+            "Weighting": {
+              "se": 13.997210620801336,
+              "low": -40.20675394419811,
+              "high": 15.38927337519402
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": -1.5817196429061802,
+              "Matching": -5.879813084112129,
+              "Weighting": -12.052593794269796
+            },
+            "Without campaign history": {
+              "Regression": 0.8942167594682884,
+              "Matching": -5.786542056074779,
+              "Weighting": -9.48155707861315
+            },
+            "Without past spending": {
+              "Regression": 42.50309285803979,
+              "Matching": 25.927897196261654,
+              "Weighting": 12.286624606092346
+            },
+            "Campaign history only": {
+              "Regression": 99.89399613188841,
+              "Matching": 89.76942066010156,
+              "Weighting": 95.72287015223267
+            }
+          }
+        }
+      },
+      {
+        "campaign": 12,
+        "type": "Type B",
+        "start": "2017-07-12",
+        "households": 170,
+        "main": {
+          "treated_mean": 326.79747058823534,
+          "untreated_mean": 130.01959982601133,
+          "raw_difference": 196.777870762224,
+          "untargeted_households": 2299,
+          "estimates": {
+            "Regression": 29.443591846811593,
+            "Matching": 53.28429088558505,
+            "Weighting": 10.850216244582327
+          },
+          "auc": 0.8450937747869918,
+          "weighting_effective_controls": 401.75148980461705,
+          "matching_effective_controls": 113.68116192616928,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 11.581855971450358,
+              "low": 7.146389575459422,
+              "high": 52.34499589594204
+            },
+            "Weighting": {
+              "se": 45.917403152521636,
+              "low": -87.99186094693665,
+              "high": 50.10871152671427
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.006275665731200096,
+              "Spend, weeks 5 to 8": 0.0007247040084936982,
+              "Trips": 0.0002903368163895935,
+              "Stores": 0.0003319785884059378,
+              "Private-label share": 5.285856139800065e-05,
+              "Discount share": 6.619642823479509e-05,
+              "Coupon discount": 0.0012347195609593883,
+              "Coupon redemptions": 0.0005865776620915761,
+              "Days since last trip": 0.005378146453935381,
+              "Earlier campaigns": 0.014297755855183834,
+              "Concurrent large campaigns": 0.0085320345490063,
+              "Concurrent small campaigns": 0.02399090682664056
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.08274633064992071,
+              "Spend, weeks 5 to 8": 0.009978760104980663,
+              "Trips": 0.016858671860596607,
+              "Stores": 0.0026596076595318072,
+              "Private-label share": 0.0011115326108091027,
+              "Discount share": 0.014193075992870756,
+              "Coupon discount": 0.009597656396634669,
+              "Coupon redemptions": 0.003510627052087044,
+              "Days since last trip": 0.04501576382062701,
+              "Earlier campaigns": 0.00155940724279884,
+              "Concurrent large campaigns": 0.003743760556801667,
+              "Concurrent small campaigns": 0.010311625945357618
+            },
+            "top": [
+              "Concurrent small campaigns",
+              "Earlier campaigns",
+              "Concurrent large campaigns"
+            ],
+            "top_share_below_median_outcome": 0.6666666666666666,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.15384615384615385
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 2.8153192626130317e-05,
+              "Spend, weeks 5 to 8": 0.0002525228626658925,
+              "Spend, last 4 weeks (level)": 0.0035951888747352634,
+              "Spend, weeks 5 to 8 (level)": 0.007560123130367567,
+              "Trips": 0.000327797115582049,
+              "Stores": 0.00013685235068556503,
+              "Private-label share": 1.47535101711205e-05,
+              "Discount share": 0.00036540381998336835,
+              "Coupon discount": 8.53015780431593e-06,
+              "Coupon redemptions": 0.00030232046828864486,
+              "Days since last trip": 0.0001255797596687352,
+              "Earlier campaigns": 0.012748017297733415,
+              "Concurrent large campaigns": 0.009658808654242172,
+              "Concurrent small campaigns": 0.030505377673029074
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 4.263491287612468e-06,
+              "Spend, weeks 5 to 8": 0.0002103220323509195,
+              "Spend, last 4 weeks (level)": 0.1217469474397399,
+              "Spend, weeks 5 to 8 (level)": 0.06568228229080939,
+              "Trips": 1.057013915347405e-05,
+              "Stores": 0.0010030247429470315,
+              "Private-label share": 0.003378494633786963,
+              "Discount share": 0.001510864712013982,
+              "Coupon discount": 0.00015383612383630462,
+              "Coupon redemptions": 0.002022299218665545,
+              "Days since last trip": 0.00023255385343730773,
+              "Earlier campaigns": 0.0011994768858810325,
+              "Concurrent large campaigns": 0.008847030224355974,
+              "Concurrent small campaigns": 0.0001655998352562545
+            },
+            "top": [
+              "Concurrent small campaigns",
+              "Earlier campaigns",
+              "Concurrent large campaigns"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.367032967032967
+          }
+        },
+        "placebo": {
+          "treated_mean": 317.354,
+          "untreated_mean": 130.89128751631145,
+          "raw_difference": 186.46271248368853,
+          "untargeted_households": 2299,
+          "estimates": {
+            "Regression": 17.917520838347116,
+            "Matching": 44.57078431372548,
+            "Weighting": 8.702575951314827
+          },
+          "auc": 0.8212291789268992,
+          "weighting_effective_controls": 657.9679798966329,
+          "matching_effective_controls": 126.38483965014576,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 13.088040815484902,
+              "low": -7.1064773061527164,
+              "high": 42.95042068098705
+            },
+            "Weighting": {
+              "se": 19.01888143093414,
+              "low": -36.06293247510831,
+              "high": 40.09875238660642
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 17.917520838347116,
+              "Matching": 44.57078431372548,
+              "Weighting": 8.702575951314827
+            },
+            "Without campaign history": {
+              "Regression": 19.931657687776912,
+              "Matching": 34.01735891544115,
+              "Weighting": -1.6034225839506462
+            },
+            "Without past spending": {
+              "Regression": 82.4686276204511,
+              "Matching": 59.94090196078429,
+              "Weighting": 71.1161509374221
+            },
+            "Campaign history only": {
+              "Regression": 121.97818112247406,
+              "Matching": 125.6270887021627,
+              "Weighting": 117.85326940754769
+            }
+          }
+        }
+      },
+      {
+        "campaign": 13,
+        "type": "Type A",
+        "start": "2017-08-08",
+        "households": 1077,
+        "main": {
+          "treated_mean": 227.94358402971218,
+          "untreated_mean": 71.98935344827586,
+          "raw_difference": 155.95423058143632,
+          "untargeted_households": 1392,
+          "estimates": {
+            "Regression": 15.295572032155992,
+            "Matching": 11.676364609873843,
+            "Weighting": -114.40014428835363
+          },
+          "auc": 0.9194581852527776,
+          "weighting_effective_controls": 7.255022759050711,
+          "matching_effective_controls": 89.57311730936081,
+          "treated_score_above_0.9": 0.4113277623026927,
+          "bootstrap": {
+            "Regression": {
+              "se": 5.954704021874215,
+              "low": 4.012322009716816,
+              "high": 27.07332280433526
+            },
+            "Weighting": {
+              "se": 107.61887725285784,
+              "low": -352.65866222045645,
+              "high": 87.58834023681591
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0030828770528939105,
+              "Spend, weeks 5 to 8": 0.00027925382902980404,
+              "Trips": 0.029617686513178483,
+              "Stores": 0.00010721648004586775,
+              "Private-label share": 0.0003819109441175668,
+              "Discount share": 0.0012437086504333175,
+              "Coupon discount": 3.8014516100810266e-07,
+              "Coupon redemptions": 0.001725926926211063,
+              "Days since last trip": 0.0019424960641880628,
+              "Earlier campaigns": 0.1655394113749222,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.0025508333785820513
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.04554281515757779,
+              "Spend, weeks 5 to 8": 0.0005704416928072333,
+              "Trips": 0.028749236357227773,
+              "Stores": 0.0032935341014908716,
+              "Private-label share": 0.0019195794820029944,
+              "Discount share": 0.010994089171450947,
+              "Coupon discount": 0.022482919747460774,
+              "Coupon redemptions": 0.00030116412723084,
+              "Days since last trip": 0.038799883934978574,
+              "Earlier campaigns": 0.002643272423419658,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.006590499012905256
+            },
+            "top": [
+              "Earlier campaigns",
+              "Trips",
+              "Spend, last 4 weeks"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.4545454545454546
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.00534534861146138,
+              "Spend, weeks 5 to 8": 0.0012227697949267575,
+              "Spend, last 4 weeks (level)": 0.0007507613742211849,
+              "Spend, weeks 5 to 8 (level)": 0.0017838898742215106,
+              "Trips": 0.03341942165591468,
+              "Stores": 0.00011326662464149617,
+              "Private-label share": 0.00047160070152302746,
+              "Discount share": 0.0021081298402145583,
+              "Coupon discount": 0.0002573527910907611,
+              "Coupon redemptions": 0.0016804415218571245,
+              "Days since last trip": 0.004499314019310753,
+              "Earlier campaigns": 0.16728337381213434,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.00424139162748275
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.01395229999473501,
+              "Spend, weeks 5 to 8": 0.04206183616106704,
+              "Spend, last 4 weeks (level)": 0.1185546010344171,
+              "Spend, weeks 5 to 8 (level)": 0.24918121531347254,
+              "Trips": 0.0063696799804391566,
+              "Stores": 0.0004362565213726204,
+              "Private-label share": 0.0005682954441335092,
+              "Discount share": 5.699385123476124e-05,
+              "Coupon discount": 0.0037436505282132763,
+              "Coupon redemptions": 0.0020861349859682314,
+              "Days since last trip": 0.005061548701841171,
+              "Earlier campaigns": 0.005224732499444216,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.0014231351544004775
+            },
+            "top": [
+              "Earlier campaigns",
+              "Trips",
+              "Spend, last 4 weeks"
+            ],
+            "top_share_below_median_outcome": 0.0,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.4021978021978022
+          }
+        },
+        "placebo": {
+          "treated_mean": 233.26183844011143,
+          "untreated_mean": 73.17408045977012,
+          "raw_difference": 160.0877579803413,
+          "untargeted_households": 1392,
+          "estimates": {
+            "Regression": 22.98076497615473,
+            "Matching": 35.625877437325926,
+            "Weighting": -134.677721626258
+          },
+          "auc": 0.9180304085422469,
+          "weighting_effective_controls": 6.743875825748621,
+          "matching_effective_controls": 104.9921459953628,
+          "treated_score_above_0.9": 0.3806870937790158,
+          "bootstrap": {
+            "Regression": {
+              "se": 5.967608656268435,
+              "low": 11.165208432715374,
+              "high": 34.58640883533083
+            },
+            "Weighting": {
+              "se": 98.1416744018422,
+              "low": -289.5605774119776,
+              "high": 68.7180054329023
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 22.98076497615473,
+              "Matching": 35.625877437325926,
+              "Weighting": -134.677721626258
+            },
+            "Without campaign history": {
+              "Regression": 29.543784907600404,
+              "Matching": 15.612772177895295,
+              "Weighting": -19.60125665921464
+            },
+            "Without past spending": {
+              "Regression": 20.53577208945185,
+              "Matching": 20.193899721448503,
+              "Weighting": -204.52105931041206
+            },
+            "Campaign history only": {
+              "Regression": 94.8058946726862,
+              "Matching": 78.0089174099806,
+              "Weighting": -84.05136299119079
+            }
+          }
+        }
+      },
+      {
+        "campaign": 14,
+        "type": "Type C",
+        "start": "2017-09-04",
+        "households": 224,
+        "main": {
+          "treated_mean": 318.37790178571424,
+          "untreated_mean": 119.20943875278397,
+          "raw_difference": 199.16846303293028,
+          "untargeted_households": 2245,
+          "estimates": {
+            "Regression": 30.93095442803897,
+            "Matching": 29.25725446428561,
+            "Weighting": 9.73589750450617
+          },
+          "auc": 0.8562917594654789,
+          "weighting_effective_controls": 421.11776876258074,
+          "matching_effective_controls": 149.5558867362146,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 11.061463830420797,
+              "low": 8.807521608596911,
+              "high": 53.35287234913942
+            },
+            "Weighting": {
+              "se": 20.35187473512459,
+              "low": -34.849288903550544,
+              "high": 44.39643732553764
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.00023887089395777702,
+              "Spend, weeks 5 to 8": 0.0017013804403260794,
+              "Trips": 9.055347104797477e-06,
+              "Stores": 0.00013823702862194955,
+              "Private-label share": 4.197516993671113e-06,
+              "Discount share": 4.492101758154501e-05,
+              "Coupon discount": 0.0020630689225745523,
+              "Coupon redemptions": 0.002286197107563306,
+              "Days since last trip": 0.0007540616416790254,
+              "Earlier campaigns": 0.027149777596707614,
+              "Concurrent large campaigns": 0.0004741978273270217,
+              "Concurrent small campaigns": 0.00033406906674047474
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.07680884960966919,
+              "Spend, weeks 5 to 8": 0.012285934180694298,
+              "Trips": 0.018120402916802728,
+              "Stores": 0.0015135195862634545,
+              "Private-label share": 4.7335999217479485e-07,
+              "Discount share": 0.010912081283344992,
+              "Coupon discount": 0.014777234614519918,
+              "Coupon redemptions": 0.00010134384833783009,
+              "Days since last trip": 0.04683641084324807,
+              "Earlier campaigns": 0.014258682250024425,
+              "Concurrent large campaigns": 0.0006385822626703838,
+              "Concurrent small campaigns": 0.0006535042208483345
+            },
+            "top": [
+              "Earlier campaigns",
+              "Coupon redemptions",
+              "Coupon discount"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.11188811188811189
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0013477818022831157,
+              "Spend, weeks 5 to 8": 0.00045593141133293085,
+              "Spend, last 4 weeks (level)": 0.001385403023154359,
+              "Spend, weeks 5 to 8 (level)": 0.013502885948145353,
+              "Trips": 0.0010137890529844415,
+              "Stores": 0.00018902029563641842,
+              "Private-label share": 6.876760211163746e-06,
+              "Discount share": 0.0003575679649324334,
+              "Coupon discount": 0.00016205822227125495,
+              "Coupon redemptions": 0.0015970435627667549,
+              "Days since last trip": 0.001031459535598024,
+              "Earlier campaigns": 0.020325301585916392,
+              "Concurrent large campaigns": 0.0014009756764213931,
+              "Concurrent small campaigns": 0.00042124211696571305
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0013121782011980756,
+              "Spend, weeks 5 to 8": 0.0031270101840665545,
+              "Spend, last 4 weeks (level)": 0.15973835640404188,
+              "Spend, weeks 5 to 8 (level)": 0.10300259108427921,
+              "Trips": 0.00015781788375528408,
+              "Stores": 0.0034446089323283925,
+              "Private-label share": 8.988753597120104e-06,
+              "Discount share": 0.0003797418686954531,
+              "Coupon discount": 3.7936715268671634e-05,
+              "Coupon redemptions": 0.0014317012627924942,
+              "Days since last trip": 0.0022578719205646304,
+              "Earlier campaigns": 0.005249899232946616,
+              "Concurrent large campaigns": 0.0006087324904646117,
+              "Concurrent small campaigns": 0.0002597825782147586
+            },
+            "top": [
+              "Earlier campaigns",
+              "Spend, weeks 5 to 8 (level)",
+              "Coupon redemptions"
+            ],
+            "top_share_below_median_outcome": 0.0,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.6395604395604396
+          }
+        },
+        "placebo": {
+          "treated_mean": 312.68705357142863,
+          "untreated_mean": 122.55904677060134,
+          "raw_difference": 190.12800680082728,
+          "untargeted_households": 2245,
+          "estimates": {
+            "Regression": -9.5611072825032,
+            "Matching": -0.09898596938762694,
+            "Weighting": -13.025839020536125
+          },
+          "auc": 0.8733385698377346,
+          "weighting_effective_controls": 399.5763694604398,
+          "matching_effective_controls": 143.12632436837816,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 10.906951941093348,
+              "low": -31.44717577145785,
+              "high": 12.026822403708726
+            },
+            "Weighting": {
+              "se": 27.657943287453218,
+              "low": -65.07430644424461,
+              "high": 20.13002513185437
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": -9.5611072825032,
+              "Matching": -0.09898596938762694,
+              "Weighting": -13.025839020536125
+            },
+            "Without campaign history": {
+              "Regression": 0.969533966851466,
+              "Matching": 5.938055393586069,
+              "Weighting": -329.403698247739
+            },
+            "Without past spending": {
+              "Regression": 51.75976921483311,
+              "Matching": 81.72285076530622,
+              "Weighting": 52.236840497527226
+            },
+            "Campaign history only": {
+              "Regression": 75.3355487245737,
+              "Matching": 77.79326797518229,
+              "Weighting": 75.5647906234503
+            }
+          }
+        }
+      },
+      {
+        "campaign": 16,
+        "type": "Type B",
+        "start": "2017-10-04",
+        "households": 188,
+        "main": {
+          "treated_mean": 327.2609574468085,
+          "untreated_mean": 125.20854888206925,
+          "raw_difference": 202.05240856473927,
+          "untargeted_households": 2281,
+          "estimates": {
+            "Regression": 10.680486170263347,
+            "Matching": 8.320960168233512,
+            "Weighting": -6.432588792362253
+          },
+          "auc": 0.8559667279188858,
+          "weighting_effective_controls": 392.2296737929093,
+          "matching_effective_controls": 124.01201122788693,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 11.359942322198755,
+              "low": -11.144508415156805,
+              "high": 34.01066785831829
+            },
+            "Weighting": {
+              "se": 23.87797266502684,
+              "low": -60.50044962275778,
+              "high": 30.921904438138263
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.0007972168466943123,
+              "Spend, weeks 5 to 8": 0.0004937296314651915,
+              "Trips": 0.0006282724343819292,
+              "Stores": 0.0001723742557946116,
+              "Private-label share": 0.0001308531117736579,
+              "Discount share": 0.0017419454860743524,
+              "Coupon discount": 0.0033626867029635625,
+              "Coupon redemptions": 0.00044913877063201905,
+              "Days since last trip": 0.0010858805827678086,
+              "Earlier campaigns": 0.01686773571681017,
+              "Concurrent large campaigns": 0.001228289319336164,
+              "Concurrent small campaigns": 0.008302643038967175
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.07414991711792174,
+              "Spend, weeks 5 to 8": 0.015366796816909922,
+              "Trips": 0.00852304929449475,
+              "Stores": 3.540203573238082e-05,
+              "Private-label share": 0.0003115783307790426,
+              "Discount share": 0.010471640978145956,
+              "Coupon discount": 0.009006462951773445,
+              "Coupon redemptions": 0.0032498952199111436,
+              "Days since last trip": 0.03541376989130268,
+              "Earlier campaigns": 0.004517120088475692,
+              "Concurrent large campaigns": 0.00017140276871231545,
+              "Concurrent small campaigns": 0.008638842820699719
+            },
+            "top": [
+              "Earlier campaigns",
+              "Concurrent small campaigns",
+              "Coupon discount"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.30069930069930073
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.000840413967161318,
+              "Spend, weeks 5 to 8": 0.00020687159918000647,
+              "Spend, last 4 weeks (level)": 0.003199526516053935,
+              "Spend, weeks 5 to 8 (level)": 0.004672239971110405,
+              "Trips": 9.741510979993526e-06,
+              "Stores": 0.0001089486419664764,
+              "Private-label share": 7.754824229345983e-05,
+              "Discount share": 0.0005809094101072877,
+              "Coupon discount": 0.0010810765661627762,
+              "Coupon redemptions": 6.355742195929056e-05,
+              "Days since last trip": 0.00035508614732778697,
+              "Earlier campaigns": 0.01427807966721924,
+              "Concurrent large campaigns": 0.0021282249261254907,
+              "Concurrent small campaigns": 0.004508176451866801
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0006593831108261723,
+              "Spend, weeks 5 to 8": 0.001325831179891926,
+              "Spend, last 4 weeks (level)": 0.12444048912931449,
+              "Spend, weeks 5 to 8 (level)": 0.1105183556594321,
+              "Trips": 0.0015603864677402682,
+              "Stores": 1.1619158140151075e-05,
+              "Private-label share": 1.3429504585052371e-06,
+              "Discount share": 0.0008028327435853826,
+              "Coupon discount": 0.0006861885318097205,
+              "Coupon redemptions": 6.696919381421807e-05,
+              "Days since last trip": 0.003667608340829635,
+              "Earlier campaigns": 0.0016971041572424348,
+              "Concurrent large campaigns": 0.003908852556156546,
+              "Concurrent small campaigns": 3.7580093652564738e-06
+            },
+            "top": [
+              "Earlier campaigns",
+              "Spend, weeks 5 to 8 (level)",
+              "Concurrent small campaigns"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.44175824175824174
+          }
+        },
+        "placebo": {
+          "treated_mean": 323.7495744680851,
+          "untreated_mean": 120.07016659359932,
+          "raw_difference": 203.67940787448578,
+          "untargeted_households": 2281,
+          "estimates": {
+            "Regression": 15.388983113507923,
+            "Matching": 36.16526595744676,
+            "Weighting": 2.230460998617957
+          },
+          "auc": 0.8513926329437443,
+          "weighting_effective_controls": 416.95228392399264,
+          "matching_effective_controls": 129.94117647058823,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 10.619194796490387,
+              "low": -5.328111394404014,
+              "high": 36.18779212447012
+            },
+            "Weighting": {
+              "se": 25.920094944229383,
+              "low": -52.19257219911388,
+              "high": 34.542966370811044
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 15.388983113507923,
+              "Matching": 36.16526595744676,
+              "Weighting": 2.230460998617957
+            },
+            "Without campaign history": {
+              "Regression": 25.974639617049142,
+              "Matching": 39.57361702127656,
+              "Weighting": -23.16293760391966
+            },
+            "Without past spending": {
+              "Regression": 62.276452061584,
+              "Matching": 52.84781914893614,
+              "Weighting": 41.685602581809064
+            },
+            "Campaign history only": {
+              "Regression": 102.99872497862556,
+              "Matching": 107.94132531935713,
+              "Weighting": 98.04891008857643
+            }
+          }
+        }
+      },
+      {
+        "campaign": 17,
+        "type": "Type B",
+        "start": "2017-10-18",
+        "households": 202,
+        "main": {
+          "treated_mean": 305.69846534653465,
+          "untreated_mean": 129.45872959858843,
+          "raw_difference": 176.2397357479462,
+          "untargeted_households": 2267,
+          "estimates": {
+            "Regression": -2.0848895679471693,
+            "Matching": 27.7492574257426,
+            "Weighting": 3.284942754992585
+          },
+          "auc": 0.8634388361641634,
+          "weighting_effective_controls": 550.2820026745195,
+          "matching_effective_controls": 122.16766467065868,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 11.137529451285857,
+              "low": -24.287711821861283,
+              "high": 19.324992466983733
+            },
+            "Weighting": {
+              "se": 13.300305122132015,
+              "low": -22.716225304498312,
+              "high": 29.595438585328953
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.002629405012033045,
+              "Spend, weeks 5 to 8": 2.883414572252094e-05,
+              "Trips": 0.0030050518916695116,
+              "Stores": 0.0006114329691469974,
+              "Private-label share": 0.0012534131252883106,
+              "Discount share": 0.0001800250552080353,
+              "Coupon discount": 0.004745908943325674,
+              "Coupon redemptions": 0.00268632448881212,
+              "Days since last trip": 0.006364646666225717,
+              "Earlier campaigns": 0.0020979566590656994,
+              "Concurrent large campaigns": 0.01164681863277107,
+              "Concurrent small campaigns": 0.005148910216840284
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0838088587220437,
+              "Spend, weeks 5 to 8": 0.01620001991167272,
+              "Trips": 0.011075993754843683,
+              "Stores": 0.0009069422910910829,
+              "Private-label share": 7.608766172786e-06,
+              "Discount share": 0.008554273292509114,
+              "Coupon discount": 0.01409573733469368,
+              "Coupon redemptions": 0.008772605045030612,
+              "Days since last trip": 0.05049453309258848,
+              "Earlier campaigns": 0.009898813705236677,
+              "Concurrent large campaigns": 3.0536740818753686e-05,
+              "Concurrent small campaigns": 0.006699020803774268
+            },
+            "top": [
+              "Concurrent large campaigns",
+              "Days since last trip",
+              "Concurrent small campaigns"
+            ],
+            "top_share_below_median_outcome": 0.6666666666666666,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.034965034965034975
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 8.748200482136361e-07,
+              "Spend, weeks 5 to 8": 0.0006913568013552276,
+              "Spend, last 4 weeks (level)": 0.0014393007168568548,
+              "Spend, weeks 5 to 8 (level)": 0.0038210314363501295,
+              "Trips": 0.0010410097377038052,
+              "Stores": 0.0008329242871353701,
+              "Private-label share": 0.0011391115768164292,
+              "Discount share": 0.0009568087465943244,
+              "Coupon discount": 0.0020710132371123927,
+              "Coupon redemptions": 0.003620239754369038,
+              "Days since last trip": 0.0010159894611904002,
+              "Earlier campaigns": 0.0013484630129714488,
+              "Concurrent large campaigns": 0.013707221165021955,
+              "Concurrent small campaigns": 0.003041395113240637
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.00018569211966937713,
+              "Spend, weeks 5 to 8": 0.0003103370157237133,
+              "Spend, last 4 weeks (level)": 0.08780622497270013,
+              "Spend, weeks 5 to 8 (level)": 0.07660353793328195,
+              "Trips": 3.550256755496132e-05,
+              "Stores": 0.0001655005358399272,
+              "Private-label share": 4.8211825066601855e-05,
+              "Discount share": 7.635868660039579e-05,
+              "Coupon discount": 0.0005785924480911666,
+              "Coupon redemptions": 0.0023592515901757582,
+              "Days since last trip": 2.638483951209717e-07,
+              "Earlier campaigns": 0.004645359062203068,
+              "Concurrent large campaigns": 0.0026317517518695955,
+              "Concurrent small campaigns": 0.00027642506426644694
+            },
+            "top": [
+              "Concurrent large campaigns",
+              "Spend, weeks 5 to 8 (level)",
+              "Coupon redemptions"
+            ],
+            "top_share_below_median_outcome": 0.0,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.5956043956043956
+          }
+        },
+        "placebo": {
+          "treated_mean": 312.87900990099007,
+          "untreated_mean": 122.77841640935156,
+          "raw_difference": 190.1005934916385,
+          "untargeted_households": 2267,
+          "estimates": {
+            "Regression": 15.173468295566792,
+            "Matching": -5.963663366336675,
+            "Weighting": 15.006179779998092
+          },
+          "auc": 0.8471417278472444,
+          "weighting_effective_controls": 563.7804196554811,
+          "matching_effective_controls": 112.0989010989011,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 10.860156286711469,
+              "low": -5.833061597192937,
+              "high": 36.777678915742584
+            },
+            "Weighting": {
+              "se": 12.523050660431307,
+              "low": -8.96455381462233,
+              "high": 39.38005962098565
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 15.173468295566792,
+              "Matching": -5.963663366336675,
+              "Weighting": 15.006179779998092
+            },
+            "Without campaign history": {
+              "Regression": 19.941867991260107,
+              "Matching": -11.88836633663368,
+              "Weighting": 14.384104360456945
+            },
+            "Without past spending": {
+              "Regression": 64.25461651699287,
+              "Matching": 80.8915346534653,
+              "Weighting": 50.62332474224536
+            },
+            "Campaign history only": {
+              "Regression": 102.96157471275986,
+              "Matching": 99.6807522407135,
+              "Weighting": 94.11008606248478
+            }
+          }
+        }
+      },
+      {
+        "campaign": 18,
+        "type": "Type A",
+        "start": "2017-10-30",
+        "households": 1133,
+        "main": {
+          "treated_mean": 228.86135922330095,
+          "untreated_mean": 81.3397005988024,
+          "raw_difference": 147.52165862449857,
+          "untargeted_households": 1336,
+          "estimates": {
+            "Regression": 12.124488267063422,
+            "Matching": -2.861832328542846,
+            "Weighting": -164.1947574132741
+          },
+          "auc": 0.9003123497048269,
+          "weighting_effective_controls": 7.530927214588779,
+          "matching_effective_controls": 118.64196750310377,
+          "treated_score_above_0.9": 0.3389232127096205,
+          "bootstrap": {
+            "Regression": {
+              "se": 5.727994294640912,
+              "low": 1.0254401202880903,
+              "high": 23.146946582417943
+            },
+            "Weighting": {
+              "se": 55.73704727369174,
+              "low": -260.73869380125035,
+              "high": -32.08923998087196
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.004226576300321942,
+              "Spend, weeks 5 to 8": 0.003921945900447642,
+              "Trips": 0.014166553613662989,
+              "Stores": 0.001145452086835632,
+              "Private-label share": 0.0019337964186691805,
+              "Discount share": 0.0009227882336292767,
+              "Coupon discount": 7.212271084042005e-05,
+              "Coupon redemptions": 0.0013964655746765795,
+              "Days since last trip": 0.0010861883967234285,
+              "Earlier campaigns": 0.1453634075145258,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.0013828735642418268
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.06765252882713649,
+              "Spend, weeks 5 to 8": 0.0058694932896966555,
+              "Trips": 0.011162411168255542,
+              "Stores": 0.00015653867691589667,
+              "Private-label share": 2.582390736195524e-05,
+              "Discount share": 0.00552157627598603,
+              "Coupon discount": 0.03753402024207278,
+              "Coupon redemptions": 0.0021976098019451957,
+              "Days since last trip": 0.046368066938766696,
+              "Earlier campaigns": 0.007689057005581725,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.01844048456299303
+            },
+            "top": [
+              "Earlier campaigns",
+              "Trips",
+              "Spend, last 4 weeks"
+            ],
+            "top_share_below_median_outcome": 0.0,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.22377622377622378
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.007186273698664622,
+              "Spend, weeks 5 to 8": 0.007960113516298092,
+              "Spend, last 4 weeks (level)": 0.0005676298187848137,
+              "Spend, weeks 5 to 8 (level)": 0.004495870188544818,
+              "Trips": 0.018092883283272194,
+              "Stores": 0.001399021876050177,
+              "Private-label share": 0.001834730529557531,
+              "Discount share": 0.002263677896108139,
+              "Coupon discount": 0.0001296581809842428,
+              "Coupon redemptions": 0.001828822613895652,
+              "Days since last trip": 0.004097542596138838,
+              "Earlier campaigns": 0.1504780931089316,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.0003888021723909025
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0026477169234286977,
+              "Spend, weeks 5 to 8": 0.0008445004514958132,
+              "Spend, last 4 weeks (level)": 0.19330440045539013,
+              "Spend, weeks 5 to 8 (level)": 0.057829774036131994,
+              "Trips": 0.000101331533023947,
+              "Stores": 4.358619499888622e-05,
+              "Private-label share": 4.3056242976891614e-05,
+              "Discount share": 0.0001266791810726264,
+              "Coupon discount": 3.891599794553505e-05,
+              "Coupon redemptions": 0.0010428240987529597,
+              "Days since last trip": 0.00024021803194693842,
+              "Earlier campaigns": 0.004793585369689452,
+              "Concurrent large campaigns": 0.0,
+              "Concurrent small campaigns": 0.003900557108239897
+            },
+            "top": [
+              "Earlier campaigns",
+              "Trips",
+              "Spend, weeks 5 to 8"
+            ],
+            "top_share_below_median_outcome": 0.3333333333333333,
+            "strongest_below_median_outcome": false,
+            "rank_correlation": 0.35824175824175825
+          }
+        },
+        "placebo": {
+          "treated_mean": 219.30072374227714,
+          "untreated_mean": 73.19070359281437,
+          "raw_difference": 146.11002014946277,
+          "untargeted_households": 1336,
+          "estimates": {
+            "Regression": 19.14896470483646,
+            "Matching": 16.67308861247642,
+            "Weighting": -146.93434349969365
+          },
+          "auc": 0.899501416408137,
+          "weighting_effective_controls": 21.952457029528983,
+          "matching_effective_controls": 123.53213297110665,
+          "treated_score_above_0.9": 0.3327449249779347,
+          "bootstrap": {
+            "Regression": {
+              "se": 5.55638314938104,
+              "low": 8.230003202813906,
+              "high": 30.304070010180098
+            },
+            "Weighting": {
+              "se": 76.92065624901319,
+              "low": -312.6564106665949,
+              "high": -15.25977671028758
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 19.14896470483646,
+              "Matching": 16.67308861247642,
+              "Weighting": -146.93434349969365
+            },
+            "Without campaign history": {
+              "Regression": 24.517890564743983,
+              "Matching": -4.386053233232985,
+              "Weighting": -11.918427350328415
+            },
+            "Without past spending": {
+              "Regression": 7.13369961308542,
+              "Matching": 23.274721445662664,
+              "Weighting": -216.25701153060336
+            },
+            "Campaign history only": {
+              "Regression": 64.14496558007602,
+              "Matching": 62.71127952830966,
+              "Weighting": -158.2023351066682
+            }
+          }
+        }
+      },
+      {
+        "campaign": 19,
+        "type": "Type B",
+        "start": "2017-11-15",
+        "households": 130,
+        "main": {
+          "treated_mean": 313.21515384615384,
+          "untreated_mean": 139.21678922616505,
+          "raw_difference": 173.9983646199888,
+          "untargeted_households": 2339,
+          "estimates": {
+            "Regression": 23.73998728300419,
+            "Matching": 7.971610977564126,
+            "Weighting": 29.854051272476227
+          },
+          "auc": 0.8079290952741145,
+          "weighting_effective_controls": 776.6529104100995,
+          "matching_effective_controls": 109.02859446927187,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 12.480982283194352,
+              "low": -0.4945875465915062,
+              "high": 48.12700145132376
+            },
+            "Weighting": {
+              "se": 13.7837161612669,
+              "low": 2.957838858658815,
+              "high": 56.98492656630157
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.00032750082233523777,
+              "Spend, weeks 5 to 8": 2.8135994549600967e-07,
+              "Trips": 0.0027589802365103025,
+              "Stores": 0.0010491848920935272,
+              "Private-label share": 1.983239923452685e-05,
+              "Discount share": 0.0018923392775009459,
+              "Coupon discount": 0.0019499085877302312,
+              "Coupon redemptions": 0.0023470762751034093,
+              "Days since last trip": 0.002183531928985961,
+              "Earlier campaigns": 0.008459669447887811,
+              "Concurrent large campaigns": 1.4792532471062866e-05,
+              "Concurrent small campaigns": 0.0009931026327850594
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.07023625434912616,
+              "Spend, weeks 5 to 8": 0.011332225926268494,
+              "Trips": 0.010906003481068854,
+              "Stores": 2.869207988928537e-06,
+              "Private-label share": 1.6412192446055657e-06,
+              "Discount share": 0.01098998453974858,
+              "Coupon discount": 0.022716580423991137,
+              "Coupon redemptions": 0.0004374305884893255,
+              "Days since last trip": 0.037778520332192006,
+              "Earlier campaigns": 0.005539457389855186,
+              "Concurrent large campaigns": 0.0003020895670351326,
+              "Concurrent small campaigns": 0.028946845945440784
+            },
+            "top": [
+              "Earlier campaigns",
+              "Trips",
+              "Coupon redemptions"
+            ],
+            "top_share_below_median_outcome": 1.0,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.04195804195804196
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 1.4651722206336426e-05,
+              "Spend, weeks 5 to 8": 0.00026425049351283444,
+              "Spend, last 4 weeks (level)": 0.0002729261570410876,
+              "Spend, weeks 5 to 8 (level)": 0.001224495011164132,
+              "Trips": 0.00181859457910637,
+              "Stores": 0.0010216977446216163,
+              "Private-label share": 2.3479036159597187e-05,
+              "Discount share": 0.0011551961446096802,
+              "Coupon discount": 0.0011206965027319201,
+              "Coupon redemptions": 0.001992720211670852,
+              "Days since last trip": 0.0006181530749951165,
+              "Earlier campaigns": 0.007568290777937763,
+              "Concurrent large campaigns": 4.4252633781199286e-06,
+              "Concurrent small campaigns": 0.0016663346149243337
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.0038240641866633678,
+              "Spend, weeks 5 to 8": 0.0028711246510965014,
+              "Spend, last 4 weeks (level)": 0.14157222007709766,
+              "Spend, weeks 5 to 8 (level)": 0.11399222822154227,
+              "Trips": 9.700947197134683e-05,
+              "Stores": 0.0003097556651543275,
+              "Private-label share": 7.628510926350617e-05,
+              "Discount share": 4.966346217739875e-05,
+              "Coupon discount": 0.0013648247171710222,
+              "Coupon redemptions": 0.0031933272573840665,
+              "Days since last trip": 0.004334279274112134,
+              "Earlier campaigns": 0.0023898313076251856,
+              "Concurrent large campaigns": 0.0017962146037036884,
+              "Concurrent small campaigns": 0.003992057635986658
+            },
+            "top": [
+              "Earlier campaigns",
+              "Coupon redemptions",
+              "Trips"
+            ],
+            "top_share_below_median_outcome": 0.6666666666666666,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": -0.01098901098901099
+          }
+        },
+        "placebo": {
+          "treated_mean": 296.89846153846156,
+          "untreated_mean": 135.37290722530994,
+          "raw_difference": 161.52555431315162,
+          "untargeted_households": 2339,
+          "estimates": {
+            "Regression": 17.546719512517512,
+            "Matching": 16.446461538461563,
+            "Weighting": 20.113703858702593
+          },
+          "auc": 0.8140099319235702,
+          "weighting_effective_controls": 798.8650826461849,
+          "matching_effective_controls": 103.04878048780488,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 12.145234623821535,
+              "low": -5.704546374481821,
+              "high": 42.23038525549386
+            },
+            "Weighting": {
+              "se": 13.155993658611711,
+              "low": -3.769371066566542,
+              "high": 47.39620434505462
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 17.546719512517512,
+              "Matching": 16.446461538461563,
+              "Weighting": 20.113703858702593
+            },
+            "Without campaign history": {
+              "Regression": 23.036540869194035,
+              "Matching": 38.34423076923076,
+              "Weighting": 22.662129754124976
+            },
+            "Without past spending": {
+              "Regression": 29.37368135012352,
+              "Matching": 22.36876923076926,
+              "Weighting": 14.402777304315975
+            },
+            "Campaign history only": {
+              "Regression": 70.16046696326781,
+              "Matching": 71.27220986196161,
+              "Weighting": 70.82720622493983
+            }
+          }
+        }
+      },
+      {
+        "campaign": 20,
+        "type": "Type C",
+        "start": "2017-11-27",
+        "households": 244,
+        "main": {
+          "treated_mean": 369.63204918032784,
+          "untreated_mean": 131.86966292134832,
+          "raw_difference": 237.76238625897952,
+          "untargeted_households": 2225,
+          "estimates": {
+            "Regression": 30.552834618129705,
+            "Matching": 78.31290983606556,
+            "Weighting": 16.336622771453335
+          },
+          "auc": 0.8795726653158961,
+          "weighting_effective_controls": 268.6687638922324,
+          "matching_effective_controls": 161.7826086956522,
+          "treated_score_above_0.9": 0.0,
+          "bootstrap": {
+            "Regression": {
+              "se": 11.798232241565628,
+              "low": 8.822721291071732,
+              "high": 54.76535582433025
+            },
+            "Weighting": {
+              "se": 17.451327971776482,
+              "low": -18.525976842132863,
+              "high": 51.60118245819854
+            }
+          },
+          "likeness": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.00139844264047105,
+              "Spend, weeks 5 to 8": 0.00022015773492248017,
+              "Trips": 0.0012180914015008967,
+              "Stores": 0.0004814194103056844,
+              "Private-label share": 1.4135645108502936e-05,
+              "Discount share": 6.438564393253785e-05,
+              "Coupon discount": 0.0005869198619261775,
+              "Coupon redemptions": 0.006242545605653163,
+              "Days since last trip": 0.0020915222942643327,
+              "Earlier campaigns": 0.059348390623538215,
+              "Concurrent large campaigns": 0.0034080914622574743,
+              "Concurrent small campaigns": 0.0004569439186455531
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.06982172176448666,
+              "Spend, weeks 5 to 8": 0.014184566466964482,
+              "Trips": 0.016778656645194765,
+              "Stores": 0.001285365235293013,
+              "Private-label share": 4.496673162918082e-06,
+              "Discount share": 0.00948753329747209,
+              "Coupon discount": 0.03715837471415828,
+              "Coupon redemptions": 0.0003556030966613217,
+              "Days since last trip": 0.04303357668642723,
+              "Earlier campaigns": 0.006341899379452728,
+              "Concurrent large campaigns": 0.0014065472290753212,
+              "Concurrent small campaigns": 0.015160073280520539
+            },
+            "top": [
+              "Earlier campaigns",
+              "Coupon redemptions",
+              "Concurrent large campaigns"
+            ],
+            "top_share_below_median_outcome": 1.0,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": 0.0979020979020979
+          },
+          "likeness_with_levels": {
+            "treatment_partial_r2": {
+              "Spend, last 4 weeks": 0.00015672524890391842,
+              "Spend, weeks 5 to 8": 0.00034808948017839926,
+              "Spend, last 4 weeks (level)": 0.0015684486871427917,
+              "Spend, weeks 5 to 8 (level)": 0.0036523126540352387,
+              "Trips": 0.0001813835952780759,
+              "Stores": 0.0004910379480309091,
+              "Private-label share": 3.320706003717652e-06,
+              "Discount share": 0.0005657730212833541,
+              "Coupon discount": 5.702045698664231e-06,
+              "Coupon redemptions": 0.005053864784468763,
+              "Days since last trip": 7.89904090261996e-08,
+              "Earlier campaigns": 0.05324977370312945,
+              "Concurrent large campaigns": 0.002099542517511424,
+              "Concurrent small campaigns": 4.848950006777962e-05
+            },
+            "outcome_partial_r2": {
+              "Spend, last 4 weeks": 0.003075796233713208,
+              "Spend, weeks 5 to 8": 0.008624755014958829,
+              "Spend, last 4 weeks (level)": 0.11017558794257676,
+              "Spend, weeks 5 to 8 (level)": 0.1502956945186186,
+              "Trips": 0.0007473415499439927,
+              "Stores": 0.0027434363562860073,
+              "Private-label share": 0.00031668211477929695,
+              "Discount share": 6.519502091774979e-05,
+              "Coupon discount": 0.004485454628427512,
+              "Coupon redemptions": 3.651017178911611e-05,
+              "Days since last trip": 0.0029277798025172373,
+              "Earlier campaigns": 0.0011921100638157137,
+              "Concurrent large campaigns": 0.00040319694380487164,
+              "Concurrent small campaigns": 0.002356634560020259
+            },
+            "top": [
+              "Earlier campaigns",
+              "Coupon redemptions",
+              "Spend, weeks 5 to 8 (level)"
+            ],
+            "top_share_below_median_outcome": 0.6666666666666666,
+            "strongest_below_median_outcome": true,
+            "rank_correlation": -0.1164835164835165
+          }
+        },
+        "placebo": {
+          "treated_mean": 330.29569672131146,
+          "untreated_mean": 129.15847640449437,
+          "raw_difference": 201.1372203168171,
+          "untargeted_households": 2225,
+          "estimates": {
+            "Regression": 11.679413919493841,
+            "Matching": 17.80307377049172,
+            "Weighting": -24.789423258559793
+          },
+          "auc": 0.895826118990606,
+          "weighting_effective_controls": 152.27791227178326,
+          "matching_effective_controls": 125.07563025210084,
+          "treated_score_above_0.9": 0.012295081967213115,
+          "bootstrap": {
+            "Regression": {
+              "se": 10.299352470053007,
+              "low": -9.052942258349395,
+              "high": 32.061622453944835
+            },
+            "Weighting": {
+              "se": 19.46197724452224,
+              "low": -62.974008298858934,
+              "high": 13.60758546806218
+            }
+          },
+          "by_adjustment_set": {
+            "Full set": {
+              "Regression": 11.679413919493841,
+              "Matching": 17.80307377049172,
+              "Weighting": -24.789423258559793
+            },
+            "Without campaign history": {
+              "Regression": 25.078846593756726,
+              "Matching": 33.06258196721308,
+              "Weighting": 7.0692832227546205
+            },
+            "Without past spending": {
+              "Regression": 42.31148952843289,
+              "Matching": 44.22245901639343,
+              "Weighting": -13.013834329925771
+            },
+            "Campaign history only": {
+              "Regression": 60.05576726809198,
+              "Matching": 65.69267660998997,
+              "Weighting": 20.427890844550575
+            }
+          }
+        }
+      }
+    ],
+    "summary": {
+      "campaigns": 16,
+      "Weighting": {
+        "placebo_positive": 9,
+        "mean_main": -12.777476776265834,
+        "mean_placebo": -17.52706760763568,
+        "median_main": 3.616895576086904,
+        "median_placebo": 1.6683715784768935,
+        "placebo_at_least_as_large_as_main": 9,
+        "mean_main_small_campaigns": 10.89781408638504,
+        "mean_placebo_small_campaigns": 4.892125906979713,
+        "placebo_homogeneity_q": 18.04395778235606,
+        "placebo_homogeneity_df": 15,
+        "placebo_precision_weighted_mean": 9.182940972267023,
+        "narrowest_placebo_interval": 44.05329946919231,
+        "placebo_fails": [
+          7,
+          18
+        ],
+        "main_excludes_zero": [
+          7,
+          8,
+          18,
+          19
+        ],
+        "placebo_se_range": [
+          11.387101450277195,
+          98.1416744018422
+        ]
+      },
+      "Regression": {
+        "placebo_positive": 14,
+        "mean_main": 17.374239116885327,
+        "mean_placebo": 13.945788758345667,
+        "median_main": 19.721370412487726,
+        "median_placebo": 15.691556996224694,
+        "placebo_at_least_as_large_as_main": 8,
+        "mean_main_small_campaigns": 18.0665393868442,
+        "mean_placebo_small_campaigns": 12.692981505661386,
+        "placebo_homogeneity_q": 12.708584589502381,
+        "placebo_homogeneity_df": 15,
+        "placebo_precision_weighted_mean": 15.89886151493507,
+        "narrowest_placebo_interval": 22.074066807366194,
+        "placebo_fails": [
+          7,
+          8,
+          9,
+          13,
+          18
+        ],
+        "main_excludes_zero": [
+          5,
+          7,
+          8,
+          12,
+          13,
+          14,
+          18,
+          20
+        ],
+        "placebo_se_range": [
+          5.55638314938104,
+          20.44832766479202
+        ]
+      },
+      "Matching": {
+        "placebo_positive": 10,
+        "mean_main": 16.754415923110813,
+        "mean_placebo": 12.264266633168049,
+        "median_main": 9.998662389053678,
+        "median_placebo": 16.55977507546899,
+        "placebo_at_least_as_large_as_main": 6,
+        "mean_main_small_campaigns": 19.965685783421705,
+        "mean_placebo_small_campaigns": 13.143453435598284
+      },
+      "raw_difference": {
+        "mean_main": 180.5163941305238,
+        "mean_placebo": 177.9315443036242,
+        "mean_treated_spend": 301.6621452699507,
+        "mean_untreated_spend": 121.14575113942692
+      },
+      "auc_range": [
+        0.7804037981207628,
+        0.9194581852527776
+      ],
+      "large_campaigns": {
+        "8": {
+          "households": 1076,
+          "untargeted_households": 1393,
+          "treated_score_above_0.9": 0.1775092936802974,
+          "weighting_effective_controls": 7.793301323656259,
+          "matching_effective_controls": 154.692392066084
+        },
+        "13": {
+          "households": 1077,
+          "untargeted_households": 1392,
+          "treated_score_above_0.9": 0.4113277623026927,
+          "weighting_effective_controls": 7.255022759050711,
+          "matching_effective_controls": 89.57311730936081
+        },
+        "18": {
+          "households": 1133,
+          "untargeted_households": 1336,
+          "treated_score_above_0.9": 0.3389232127096205,
+          "weighting_effective_controls": 7.530927214588779,
+          "matching_effective_controls": 118.64196750310377
+        }
+      },
+      "covariates": {
+        "mean_top3_share_below_median_outcome": 0.41666666666666663,
+        "campaigns_with_majority_below": 5,
+        "median_rank_correlation": 0.26223776223776224,
+        "top3_counts": {
+          "Spend, last 4 weeks": 5,
+          "Spend, weeks 5 to 8": 2,
+          "Trips": 4,
+          "Stores": 1,
+          "Discount share": 1,
+          "Coupon discount": 5,
+          "Coupon redemptions": 3,
+          "Days since last trip": 3,
+          "Earlier campaigns": 11,
+          "Concurrent large campaigns": 5,
+          "Concurrent small campaigns": 8
+        },
+        "strongest_counts": {
+          "Earlier campaigns": 10,
+          "Concurrent large campaigns": 2,
+          "Concurrent small campaigns": 4
+        },
+        "strongest_is_campaign_history": 16,
+        "strongest_below_median_outcome": 9,
+        "median_treatment_partial_r2": {
+          "Spend, last 4 weeks": 0.0028517816503323933,
+          "Spend, weeks 5 to 8": 0.00038649173024749776,
+          "Trips": 0.0012102176026479706,
+          "Stores": 0.00048770847634936924,
+          "Private-label share": 0.00025003243221946803,
+          "Discount share": 0.0010722864633912362,
+          "Coupon discount": 0.0017308601209690363,
+          "Coupon redemptions": 0.0011919247302831293,
+          "Days since last trip": 0.002137527111625147,
+          "Earlier campaigns": 0.013527709886447855,
+          "Concurrent large campaigns": 1.788979541407489e-05,
+          "Concurrent small campaigns": 0.0030421298280747344
+        },
+        "median_outcome_partial_r2": {
+          "Spend, last 4 weeks": 0.08021576094248223,
+          "Spend, weeks 5 to 8": 0.010469578497429424,
+          "Trips": 0.022160307903974996,
+          "Stores": 0.00026466181643492815,
+          "Private-label share": 4.7366905684168335e-05,
+          "Discount share": 0.010992036855599765,
+          "Coupon discount": 0.02399046670320159,
+          "Coupon redemptions": 0.0016718774259047381,
+          "Days since last trip": 0.04927769036522735,
+          "Earlier campaigns": 0.0035801962559476753,
+          "Concurrent large campaigns": 6.884592057815306e-05,
+          "Concurrent small campaigns": 0.01411983776712018
+        },
+        "mean_top3_share_below_median_outcome_with_spend_levels": 0.2708333333333333
+      },
+      "placebo_by_adjustment_set": {
+        "Regression": {
+          "Full set": {
+            "median_abs": 15.691556996224694,
+            "mean": 13.945788758345667
+          },
+          "Without campaign history": {
+            "median_abs": 21.49682081452278,
+            "mean": 19.033287718173582
+          },
+          "Without past spending": {
+            "median_abs": 45.509170389877994,
+            "mean": 47.233521971662064
+          },
+          "Campaign history only": {
+            "median_abs": 102.98014984569271,
+            "mean": 106.96257468308346
+          }
+        },
+        "Matching": {
+          "Full set": {
+            "median_abs": 22.369334176191487,
+            "mean": 12.264266633168049
+          },
+          "Without campaign history": {
+            "median_abs": 22.810363361674916,
+            "mean": 14.887552447642063
+          },
+          "Without past spending": {
+            "median_abs": 40.877795164762404,
+            "mean": 38.47960321138167
+          },
+          "Campaign history only": {
+            "median_abs": 94.72508645040753,
+            "mean": 101.70897733198633
+          }
+        },
+        "Weighting": {
+          "Full set": {
+            "median_abs": 14.697535001487182,
+            "mean": -17.52706760763568
+          },
+          "Without campaign history": {
+            "median_abs": 15.098010947240738,
+            "mean": -18.831186879855462
+          },
+          "Without past spending": {
+            "median_abs": 43.068250264678426,
+            "mean": -9.672390853042014
+          },
+          "Campaign history only": {
+            "median_abs": 96.88589012040455,
+            "mean": 70.15291392420937
+          }
+        }
+      }
+    }
+  },
+  "pooled": {
+    "weighting_small_campaigns": {
+      "campaigns": 13,
+      "mean_main": {
+        "estimate": 10.89781408638504,
+        "low": -2.595036255325513,
+        "high": 20.77730872693149,
+        "se": 5.884106895714101
+      },
+      "mean_placebo": {
+        "estimate": 4.892125906979713,
+        "low": -7.120634002287928,
+        "high": 15.317148552207653,
+        "se": 5.870818961963137
+      },
+      "mean_difference": {
+        "estimate": 6.005688179405327,
+        "low": -8.427585192821828,
+        "high": 18.705691268991618,
+        "se": 7.013140118222351
+      }
+    },
+    "correlation_main_placebo": -0.1201125757313734,
+    "mean_absolute_gap_main_placebo": 13.495361653872394,
+    "mean_main": {
+      "estimate": 17.374239116885327,
+      "low": 11.580681015604029,
+      "high": 22.902141370064435,
+      "se": 2.8621724409201152
+    },
+    "mean_placebo": {
+      "estimate": 13.945788758345667,
+      "low": 7.340927246453363,
+      "high": 20.634921768326503,
+      "se": 3.3740856168482836
+    },
+    "mean_difference": {
+      "estimate": 3.4284503585396595,
+      "low": -5.192890536022457,
+      "high": 11.654268503792146,
+      "se": 4.291458459367959
+    },
+    "mean_placebo_small_campaigns": {
+      "estimate": 12.692981505661386,
+      "low": 4.579132644850615,
+      "high": 20.730069837267983,
+      "se": 4.078503538002404
+    },
+    "mean_placebo_large_campaigns": {
+      "estimate": 19.37462018664422,
+      "low": 13.035446693080688,
+      "high": 26.09611327200556,
+      "se": 3.39233452423872
+    },
+    "mean_main_small_campaigns": {
+      "estimate": 18.0665393868442,
+      "low": 11.024800943616953,
+      "high": 24.664312593531516,
+      "se": 3.4347980242253557
+    },
+    "mean_main_large_campaigns": {
+      "estimate": 14.37427128039689,
+      "low": 7.6901083621360655,
+      "high": 20.90764529853295,
+      "se": 3.361805652500375
+    }
+  },
+  "power": [
+    {
+      "campaign": 4,
+      "households": 81,
+      "type": "Type B",
+      "Regression": {
+        "se": 13.571048799402226,
+        "power": 0.17697415541027423,
+        "detectable_at_80_percent": 38.02065031640527
+      },
+      "Weighting": {
+        "se": 13.993863819538541,
+        "power": 0.16921995996141287,
+        "detectable_at_80_percent": 39.20520887681918
+      }
+    },
+    {
+      "campaign": 5,
+      "households": 166,
+      "type": "Type B",
+      "Regression": {
+        "se": 13.607777353567494,
+        "power": 0.17627145048095638,
+        "detectable_at_80_percent": 38.12354903375469
+      },
+      "Weighting": {
+        "se": 35.723003584378176,
+        "power": 0.0676295176561888,
+        "detectable_at_80_percent": 100.0815668419939
+      }
+    },
+    {
+      "campaign": 6,
+      "households": 65,
+      "type": "Type C",
+      "Regression": {
+        "se": 20.44832766479202,
+        "power": 0.10474585103478934,
+        "detectable_at_80_percent": 57.288034785681326
+      },
+      "Weighting": {
+        "se": 22.28887878080374,
+        "power": 0.09590941651198132,
+        "detectable_at_80_percent": 62.44452279229976
+      }
+    },
+    {
+      "campaign": 7,
+      "households": 198,
+      "type": "Type B",
+      "Regression": {
+        "se": 9.957368149880033,
+        "power": 0.28831615084209733,
+        "detectable_at_80_percent": 27.8965626087039
+      },
+      "Weighting": {
+        "se": 11.459213308682125,
+        "power": 0.22948294136306013,
+        "detectable_at_80_percent": 32.104132005603844
+      }
+    },
+    {
+      "campaign": 8,
+      "households": 1076,
+      "type": "Type A",
+      "Regression": {
+        "se": 5.897092411202746,
+        "power": 0.6572168469090391,
+        "detectable_at_80_percent": 16.521294099225614
+      },
+      "Weighting": {
+        "se": 77.6774294066056,
+        "power": 0.053696113238962895,
+        "detectable_at_80_percent": 217.62108622554624
+      }
+    },
+    {
+      "campaign": 9,
+      "households": 176,
+      "type": "Type B",
+      "Regression": {
+        "se": 10.516972813256581,
+        "power": 0.26355724227665883,
+        "detectable_at_80_percent": 29.46435103361964
+      },
+      "Weighting": {
+        "se": 11.387101450277195,
+        "power": 0.2318030736263057,
+        "detectable_at_80_percent": 31.90210342309659
+      }
+    },
+    {
+      "campaign": 10,
+      "households": 123,
+      "type": "Type B",
+      "Regression": {
+        "se": 14.724772389438048,
+        "power": 0.15737726381106043,
+        "detectable_at_80_percent": 41.25292232624964
+      },
+      "Weighting": {
+        "se": 17.434548655135693,
+        "power": 0.12589380825674612,
+        "detectable_at_80_percent": 48.84463151222816
+      }
+    },
+    {
+      "campaign": 11,
+      "households": 214,
+      "type": "Type B",
+      "Regression": {
+        "se": 11.495758041394312,
+        "power": 0.2283234761889748,
+        "detectable_at_80_percent": 32.206515728770306
+      },
+      "Weighting": {
+        "se": 13.997210620801336,
+        "power": 0.1691614042283099,
+        "detectable_at_80_percent": 39.21458527523703
+      }
+    },
+    {
+      "campaign": 12,
+      "households": 170,
+      "type": "Type B",
+      "Regression": {
+        "se": 13.088040815484902,
+        "power": 0.1867780089724873,
+        "detectable_at_80_percent": 36.667455148662505
+      },
+      "Weighting": {
+        "se": 19.01888143093414,
+        "power": 0.11349805262350016,
+        "detectable_at_80_percent": 53.28329821690509
+      }
+    },
+    {
+      "campaign": 13,
+      "households": 1077,
+      "type": "Type A",
+      "Regression": {
+        "se": 5.967608656268435,
+        "power": 0.6468899349513291,
+        "detectable_at_80_percent": 16.71885241140165
+      },
+      "Weighting": {
+        "se": 98.1416744018422,
+        "power": 0.052311919985366495,
+        "detectable_at_80_percent": 274.9537150042011
+      }
+    },
+    {
+      "campaign": 14,
+      "households": 224,
+      "type": "Type C",
+      "Regression": {
+        "se": 10.906951941093348,
+        "power": 0.24841441013197102,
+        "detectable_at_80_percent": 30.556916558167124
+      },
+      "Weighting": {
+        "se": 27.657943287453218,
+        "power": 0.0795927464119327,
+        "detectable_at_80_percent": 77.48649391412894
+      }
+    },
+    {
+      "campaign": 16,
+      "households": 188,
+      "type": "Type B",
+      "Regression": {
+        "se": 10.619194796490387,
+        "power": 0.2594324458545963,
+        "detectable_at_80_percent": 29.75073614184747
+      },
+      "Weighting": {
+        "se": 25.920094944229383,
+        "power": 0.08376176169339095,
+        "detectable_at_80_percent": 72.61773799575305
+      }
+    },
+    {
+      "campaign": 17,
+      "households": 202,
+      "type": "Type B",
+      "Regression": {
+        "se": 10.860156286711469,
+        "power": 0.25014879198020856,
+        "detectable_at_80_percent": 30.42581385285085
+      },
+      "Weighting": {
+        "se": 12.523050660431307,
+        "power": 0.19972491110579277,
+        "detectable_at_80_percent": 35.084578730264354
+      }
+    },
+    {
+      "campaign": 18,
+      "households": 1133,
+      "type": "Type A",
+      "Regression": {
+        "se": 5.55638314938104,
+        "power": 0.7087989869864351,
+        "detectable_at_80_percent": 15.566763031305923
+      },
+      "Weighting": {
+        "se": 76.92065624901319,
+        "power": 0.053769446186371805,
+        "detectable_at_80_percent": 215.50091054723538
+      }
+    },
+    {
+      "campaign": 19,
+      "households": 130,
+      "type": "Type B",
+      "Regression": {
+        "se": 12.145234623821535,
+        "power": 0.20940908256808338,
+        "detectable_at_80_percent": 34.026089322098414
+      },
+      "Weighting": {
+        "se": 13.155993658611711,
+        "power": 0.18533266854555153,
+        "detectable_at_80_percent": 36.85783183396657
+      }
+    },
+    {
+      "campaign": 20,
+      "households": 244,
+      "type": "Type C",
+      "Regression": {
+        "se": 10.299352470053007,
+        "power": 0.2727321668341118,
+        "detectable_at_80_percent": 28.854665880100505
+      },
+      "Weighting": {
+        "se": 19.46197724452224,
+        "power": 0.11057299803557774,
+        "detectable_at_80_percent": 54.52467544825351
+      }
+    }
+  ],
+  "expected_placebo_failures": {
+    "bias": 13.945788758345667,
+    "Regression": 4.835386265233073,
+    "Weighting": 2.021360739430452
+  },
+  "matching_sensitivity": {
+    "ridge": 1e-06,
+    "mean_main": 17.053168033786406,
+    "mean_placebo": 14.481173261935815,
+    "placebo_positive": 12,
+    "largest_change_in_a_placebo": 31.716000000000008
+  },
+  "ladder": {
+    "campaigns": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "lags": {
+      "0": {
+        "estimate": 13.64841872090504,
+        "low": 7.2771487996259,
+        "high": 19.9201231669421,
+        "se": 3.183343541845382,
+        "positive": 9
+      },
+      "1": {
+        "estimate": 12.837710864782679,
+        "low": 6.388105780441077,
+        "high": 19.34733662826851,
+        "se": 3.409405381080653,
+        "positive": 9
+      },
+      "2": {
+        "estimate": 13.406380596895723,
+        "low": 6.791872352593862,
+        "high": 20.741682091083845,
+        "se": 3.6494887778386875,
+        "positive": 10
+      },
+      "3": {
+        "estimate": 6.758140616129222,
+        "low": 0.3738851359936185,
+        "high": 13.315188351498078,
+        "se": 3.359405037291344,
+        "positive": 9
+      }
+    }
+  },
+  "history": {
+    "campaigns": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "lengths": {
+      "28": {
+        "placebo": {
+          "estimate": 21.675582324005497,
+          "low": 14.679793557038213,
+          "high": 29.05631309627899,
+          "se": 3.7194248583382943,
+          "positive": 11
+        },
+        "main": {
+          "estimate": 22.871154494994844,
+          "low": 16.387851210025232,
+          "high": 29.703542134685204,
+          "se": 3.458407130689304
+        },
+        "difference": {
+          "estimate": 1.1955721709893525,
+          "low": -8.900045165087992,
+          "high": 11.332376181379034,
+          "se": 5.268986284560568
+        }
+      },
+      "56": {
+        "placebo": {
+          "estimate": 12.837710864782679,
+          "low": 6.24882757118343,
+          "high": 19.801432633430586,
+          "se": 3.501021634821333,
+          "positive": 9
+        },
+        "main": {
+          "estimate": 13.64841872090504,
+          "low": 7.498953666189297,
+          "high": 19.868477282075585,
+          "se": 3.149443394656148
+        },
+        "difference": {
+          "estimate": 0.8107078561223592,
+          "low": -8.153927273311615,
+          "high": 9.64662593398172,
+          "se": 4.666947680150362
+        }
+      },
+      "84": {
+        "placebo": {
+          "estimate": 8.328382864535392,
+          "low": 1.7516245420074321,
+          "high": 15.106402113333239,
+          "se": 3.419724332906887,
+          "positive": 8
+        },
+        "main": {
+          "estimate": 9.59763338844694,
+          "low": 3.7284979517999695,
+          "high": 15.7505228262604,
+          "se": 3.1076223626829935
+        },
+        "difference": {
+          "estimate": 1.2692505239115464,
+          "low": -7.4753673273201535,
+          "high": 10.122067857035884,
+          "se": 4.576208471941803
+        }
+      },
+      "112": {
+        "placebo": {
+          "estimate": 4.736126901716315,
+          "low": -1.9587543152838047,
+          "high": 11.504187034122728,
+          "se": 3.4522752693458774,
+          "positive": 8
+        },
+        "main": {
+          "estimate": 7.197174525394081,
+          "low": 1.341278329849941,
+          "high": 13.512201558421207,
+          "se": 3.168988446249858
+        },
+        "difference": {
+          "estimate": 2.4610476236777643,
+          "low": -6.337795608207503,
+          "high": 11.220786597746029,
+          "se": 4.58567875876934
+        }
+      }
+    }
+  },
+  "event_time": {
+    "weeks": [
+      -12,
+      -11,
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "treated": [
+      76.24092242196429,
+      77.79231479891801,
+      76.7188621605235,
+      76.68685549913683,
+      76.51093795529903,
+      75.21972860997471,
+      75.26444695057779,
+      75.58248855265475,
+      73.99533277619958,
+      74.47029547078294,
+      76.22956311452793,
+      72.29450916436039,
+      78.51611151883814,
+      71.27337064375048,
+      75.53827081405896,
+      76.33439229330311
+    ],
+    "untreated": [
+      28.718936407589126,
+      29.520524081935324,
+      29.03173418351599,
+      29.660260573478908,
+      29.691841282462388,
+      29.428156940096557,
+      29.24301852297531,
+      29.87753134371235,
+      30.00925723379389,
+      28.9348361209312,
+      29.973498933862164,
+      30.140563933659383,
+      30.681240527950823,
+      29.748600911266085,
+      30.04546114709996,
+      30.670448553110063
+    ],
+    "treated_mean_before": 75.58385478957665,
+    "treated_mean_after": 75.41553631748768,
+    "untreated_mean_before": 29.51917996316772,
+    "untreated_mean_after": 30.286437784856734
+  },
+  "job_training": {
+    "treatment_partial_r2": {
+      "age": 7.56402492006923e-05,
+      "educ": 0.0004209562696210293,
+      "black": 0.07816058114528997,
+      "hisp": 0.000148566677651354,
+      "marr": 0.0027895630248244035,
+      "nodegree": 0.002305144588972122,
+      "re74": 2.589661939875509e-05,
+      "re75": 0.0009454102903394946
+    },
+    "outcome_partial_r2": {
+      "age": 0.01898930991341995,
+      "educ": 0.0019268692491174494,
+      "black": 0.0009264791482647341,
+      "hisp": 6.118080346049767e-05,
+      "marr": 1.6162117563164982e-05,
+      "nodegree": 0.0003117941052008746,
+      "re74": 0.03513183079661501,
+      "re75": 0.08532131142000181
+    },
+    "top": [
+      "black",
+      "marr",
+      "nodegree"
+    ],
+    "top_share_below_median_outcome": 1.0,
+    "strongest_below_median_outcome": true,
+    "rank_correlation": -0.4761904761904762
+  },
+  "robustness": {
+    "concurrent_known_at_launch": {
+      "campaigns": 16,
+      "Weighting": {
+        "placebo_positive": 9,
+        "mean_main": -10.265898843606537,
+        "mean_placebo": -13.848396829602471,
+        "median_main": 9.13688312703735,
+        "median_placebo": 1.623170416473613,
+        "placebo_at_least_as_large_as_main": 8,
+        "mean_main_small_campaigns": 12.638719689864597,
+        "mean_placebo_small_campaigns": 5.297172794790837,
+        "placebo_homogeneity_q": 16.36875576729004,
+        "placebo_homogeneity_df": 15,
+        "placebo_precision_weighted_mean": 10.633685990886123,
+        "narrowest_placebo_interval": 40.84436669288601,
+        "placebo_fails": [
+          7,
+          9
+        ],
+        "main_excludes_zero": [
+          7,
+          8,
+          18
+        ],
+        "placebo_se_range": [
+          10.764452296457028,
+          126.68241477261189
+        ]
+      },
+      "Regression": {
+        "placebo_positive": 14,
+        "mean_main": 18.9354969953417,
+        "mean_placebo": 14.65386221885553,
+        "median_main": 19.33023634572341,
+        "median_placebo": 16.533523039580025,
+        "placebo_at_least_as_large_as_main": 8,
+        "mean_main_small_campaigns": 19.99508921513384,
+        "mean_placebo_small_campaigns": 13.410727184049133,
+        "placebo_homogeneity_q": 12.284807878992098,
+        "placebo_homogeneity_df": 15,
+        "placebo_precision_weighted_mean": 16.69561463746989,
+        "narrowest_placebo_interval": 22.035104786218874,
+        "placebo_fails": [
+          7,
+          8,
+          9,
+          13,
+          18
+        ],
+        "main_excludes_zero": [
+          5,
+          7,
+          8,
+          12,
+          13,
+          14,
+          18,
+          20
+        ],
+        "placebo_se_range": [
+          5.692388148216336,
+          20.22458899787875
+        ]
+      },
+      "Matching": {
+        "placebo_positive": 14,
+        "mean_main": 11.974637675000258,
+        "mean_placebo": 21.68571294388562,
+        "median_main": 16.306055488445367,
+        "median_placebo": 20.816171625064953,
+        "placebo_at_least_as_large_as_main": 10,
+        "mean_main_small_campaigns": 10.45617313019277,
+        "mean_placebo_small_campaigns": 21.64649551284987
+      },
+      "raw_difference": {
+        "mean_main": 180.5163941305238,
+        "mean_placebo": 177.9315443036242,
+        "mean_treated_spend": 301.6621452699507,
+        "mean_untreated_spend": 121.14575113942692
+      },
+      "auc_range": [
+        0.7804037981207628,
+        0.9177058986755462
+      ],
+      "large_campaigns": {
+        "8": {
+          "households": 1076,
+          "untargeted_households": 1393,
+          "treated_score_above_0.9": 0.17657992565055763,
+          "weighting_effective_controls": 9.25243029950122,
+          "matching_effective_controls": 146.3524425272182
+        },
+        "13": {
+          "households": 1077,
+          "untargeted_households": 1392,
+          "treated_score_above_0.9": 0.38997214484679665,
+          "weighting_effective_controls": 7.3057218070798955,
+          "matching_effective_controls": 93.27546164972644
+        },
+        "18": {
+          "households": 1133,
+          "untargeted_households": 1336,
+          "treated_score_above_0.9": 0.3406884377758164,
+          "weighting_effective_controls": 9.0661687852728,
+          "matching_effective_controls": 119.14852466864329
+        }
+      },
+      "covariates": {
+        "mean_top3_share_below_median_outcome": 0.29166666666666663,
+        "campaigns_with_majority_below": 4,
+        "median_rank_correlation": 0.4475524475524476,
+        "top3_counts": {
+          "Spend, last 4 weeks": 7,
+          "Spend, weeks 5 to 8": 2,
+          "Trips": 5,
+          "Stores": 1,
+          "Discount share": 1,
+          "Coupon discount": 6,
+          "Coupon redemptions": 3,
+          "Days since last trip": 5,
+          "Earlier campaigns": 12,
+          "Concurrent large campaigns": 1,
+          "Concurrent small campaigns": 5
+        },
+        "strongest_counts": {
+          "Spend, last 4 weeks": 1,
+          "Stores": 1,
+          "Earlier campaigns": 11,
+          "Concurrent small campaigns": 3
+        },
+        "strongest_is_campaign_history": 14,
+        "strongest_below_median_outcome": 6,
+        "median_treatment_partial_r2": {
+          "Spend, last 4 weeks": 0.003341543295592519,
+          "Spend, weeks 5 to 8": 0.0005913046501393733,
+          "Trips": 0.0017146270025574972,
+          "Stores": 0.00047284327017911945,
+          "Private-label share": 0.0003173389766363286,
+          "Discount share": 0.0010540077233858799,
+          "Coupon discount": 0.0019034941023219035,
+          "Coupon redemptions": 0.001251893916006976,
+          "Days since last trip": 0.002276435776734058,
+          "Earlier campaigns": 0.015011871810453853,
+          "Concurrent large campaigns": 0.0,
+          "Concurrent small campaigns": 0.001402657616138249
+        },
+        "median_outcome_partial_r2": {
+          "Spend, last 4 weeks": 0.08439234275466823,
+          "Spend, weeks 5 to 8": 0.011570405381233669,
+          "Trips": 0.024805864110628406,
+          "Stores": 0.00024877688252544956,
+          "Private-label share": 7.649077939325846e-05,
+          "Discount share": 0.011045206968255852,
+          "Coupon discount": 0.025601708701340258,
+          "Coupon redemptions": 0.001638875978438799,
+          "Days since last trip": 0.05043696455260557,
+          "Earlier campaigns": 0.006883137547430146,
+          "Concurrent large campaigns": 0.0,
+          "Concurrent small campaigns": 0.0018135705529926014
+        },
+        "mean_top3_share_below_median_outcome_with_spend_levels": 0.2708333333333333
+      },
+      "placebo_by_adjustment_set": {
+        "Regression": {
+          "Full set": {
+            "median_abs": 16.533523039580025,
+            "mean": 14.65386221885553
+          },
+          "Without campaign history": {
+            "median_abs": 21.49682081452278,
+            "mean": 19.033287718173582
+          },
+          "Without past spending": {
+            "median_abs": 47.97464290650393,
+            "mean": 49.59022313238326
+          },
+          "Campaign history only": {
+            "median_abs": 105.39795966706339,
+            "mean": 117.36930249417149
+          }
+        },
+        "Matching": {
+          "Full set": {
+            "median_abs": 20.816171625064953,
+            "mean": 21.68571294388562
+          },
+          "Without campaign history": {
+            "median_abs": 22.810363361674916,
+            "mean": 14.887552447642063
+          },
+          "Without past spending": {
+            "median_abs": 42.12338785046728,
+            "mean": 43.79383223690451
+          },
+          "Campaign history only": {
+            "median_abs": 103.90749873809594,
+            "mean": 115.28326039556347
+          }
+        },
+        "Weighting": {
+          "Full set": {
+            "median_abs": 16.78517810404267,
+            "mean": -13.848396829602471
+          },
+          "Without campaign history": {
+            "median_abs": 15.098010947240738,
+            "mean": -18.831186879855462
+          },
+          "Without past spending": {
+            "median_abs": 45.68883339678689,
+            "mean": -6.399967488471454
+          },
+          "Campaign history only": {
+            "median_abs": 99.8984119007793,
+            "mean": 87.94971661748627
+          }
+        }
+      }
+    },
+    "windows_of_14_days": {
+      "campaigns": 18,
+      "Weighting": {
+        "placebo_positive": 9,
+        "mean_main": -8.923302490745296,
+        "mean_placebo": -8.07287566492918,
+        "median_main": -1.4450167660242528,
+        "median_placebo": -1.0997100726253564,
+        "placebo_at_least_as_large_as_main": 7,
+        "mean_main_small_campaigns": 1.0982668909737734,
+        "mean_placebo_small_campaigns": 0.6110232438792461,
+        "placebo_homogeneity_q": 8.088147264306071,
+        "placebo_homogeneity_df": 17,
+        "placebo_precision_weighted_mean": 1.7628244417196322,
+        "narrowest_placebo_interval": 28.696430913707225,
+        "placebo_fails": [
+          18
+        ],
+        "main_excludes_zero": [
+          4,
+          18,
+          19
+        ],
+        "placebo_se_range": [
+          7.385592450948345,
+          61.14763433147372
+        ]
+      },
+      "Regression": {
+        "placebo_positive": 15,
+        "mean_main": 7.563865832344977,
+        "mean_placebo": 6.596368261070967,
+        "median_main": 6.861580435734355,
+        "median_placebo": 7.553697249723358,
+        "placebo_at_least_as_large_as_main": 8,
+        "mean_main_small_campaigns": 8.090422421920943,
+        "mean_placebo_small_campaigns": 6.2040669035460345,
+        "placebo_homogeneity_q": 11.171400935218035,
+        "placebo_homogeneity_df": 17,
+        "placebo_precision_weighted_mean": 6.9711796026516755,
+        "narrowest_placebo_interval": 13.951625099461152,
+        "placebo_fails": [
+          5,
+          13
+        ],
+        "main_excludes_zero": [
+          4,
+          7,
+          8,
+          14
+        ],
+        "placebo_se_range": [
+          3.5642593153387,
+          13.586998701578207
+        ]
+      },
+      "Matching": {
+        "placebo_positive": 14,
+        "mean_main": 8.037405380637905,
+        "mean_placebo": 5.581006248056827,
+        "median_main": 4.219787873537115,
+        "median_placebo": 6.151426629138427,
+        "placebo_at_least_as_large_as_main": 9,
+        "mean_main_small_campaigns": 9.599423049219483,
+        "mean_placebo_small_campaigns": 5.769778991465899
+      },
+      "raw_difference": {
+        "mean_main": 90.8960620858122,
+        "mean_placebo": 89.18764926950304,
+        "mean_treated_spend": 152.02108327124193,
+        "mean_untreated_spend": 61.12502118542971
+      },
+      "auc_range": [
+        0.7824604527613686,
+        0.918014066318744
+      ],
+      "large_campaigns": {
+        "8": {
+          "households": 1076,
+          "untargeted_households": 1393,
+          "treated_score_above_0.9": 0.17936802973977695,
+          "weighting_effective_controls": 7.544082293908512,
+          "matching_effective_controls": 160.29293975469756
+        },
+        "13": {
+          "households": 1077,
+          "untargeted_households": 1392,
+          "treated_score_above_0.9": 0.3946146703806871,
+          "weighting_effective_controls": 6.241071391713343,
+          "matching_effective_controls": 105.70253222137525
+        },
+        "18": {
+          "households": 1133,
+          "untargeted_households": 1336,
+          "treated_score_above_0.9": 0.353927625772286,
+          "weighting_effective_controls": 8.677959683836821,
+          "matching_effective_controls": 127.25092929708906
+        }
+      },
+      "placebo_by_adjustment_set": {
+        "Regression": {
+          "Full set": {
+            "median_abs": 7.640043611791495,
+            "mean": 6.596368261070967
+          },
+          "Without campaign history": {
+            "median_abs": 10.014716825713219,
+            "mean": 9.190995381595025
+          },
+          "Without past spending": {
+            "median_abs": 18.961736820624704,
+            "mean": 23.77762140933942
+          },
+          "Campaign history only": {
+            "median_abs": 50.80708857623563,
+            "mean": 52.853941542643966
+          }
+        },
+        "Matching": {
+          "Full set": {
+            "median_abs": 7.886868936830751,
+            "mean": 5.581006248056827
+          },
+          "Without campaign history": {
+            "median_abs": 15.157645103822176,
+            "mean": 8.880492653009735
+          },
+          "Without past spending": {
+            "median_abs": 17.119537381327113,
+            "mean": 21.81772702878159
+          },
+          "Campaign history only": {
+            "median_abs": 45.32793883773759,
+            "mean": 51.01499588881999
+          }
+        },
+        "Weighting": {
+          "Full set": {
+            "median_abs": 5.833705874980055,
+            "mean": -8.07287566492918
+          },
+          "Without campaign history": {
+            "median_abs": 8.505665885453396,
+            "mean": -11.454583657258489
+          },
+          "Without past spending": {
+            "median_abs": 18.69580873510398,
+            "mean": -3.0574255083903656
+          },
+          "Campaign history only": {
+            "median_abs": 46.46907592886092,
+            "mean": 39.36462440862366
+          }
+        }
+      }
+    }
+  }
+}

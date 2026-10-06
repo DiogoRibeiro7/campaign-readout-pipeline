@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.rds binary
+*.rda binary
+*.parquet binary
+*.npz binary

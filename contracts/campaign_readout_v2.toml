@@ -1,0 +1,76 @@
+# Contract for a campaign readout, version 2.
+#
+# Version 1 adjusts for 56 days of history, and its pre-history placebo failed:
+# the targeted households had spent more than the comparison households before
+# the history began. Version 2 doubles the history to 112 days. Nothing else
+# changes.
+#
+# A new version starts with an empty record. The placebos of version 1 say
+# nothing about version 2, and the gates of version 2 have to be passed again.
+
+name = "campaign_readout"
+version = 2
+
+[estimand]
+population = "Households seen in the transaction feed before the campaign's launch"
+treatment = "The household was sent the campaign"
+outcome = "The household's spending in the 28 days from the campaign's launch, in US dollars"
+contrast = "Average effect of being sent the campaign on the households that were sent it, the other campaigns they were sent held as they were"
+
+# The data: the Complete Journey files as distributed with the R package
+# completejourney, pinned to one commit, one SHA-256 per file.
+[source]
+repository = "bradleyboehmke/completejourney"
+commit = "5b5d06192b9856edd04e4d405787af2f2e4a1fef"
+
+[source.files]
+"transactions.rds" = "1fa0700033f1e5d9bb6b09e2be063d8d68474d346e95c50f2833e09d083e0007"
+"campaigns.rda" = "33c7b3dc1bc722d465f97416fb1327c6a9a640190e464c73e354bce8c001a772"
+"campaign_descriptions.rda" = "601bd17ea1a6de92cc288f393164813fbaf293b997d44054dcf1f3ebbe8dacee"
+"coupon_redemptions.rda" = "4b68148175ed19300bb2615d68d1a0300a5f971db3240819ab5d92e5919e1598"
+"products.rda" = "a80c6df33623b4af296ae9f317a6647e369db7e8ce7e7baed0e1bf44b9d979e5"
+
+[windows]
+outcome_days = 28
+history_days = 112
+readout_latency_days = 0      # the readout runs the day the outcome window closes
+
+# What a household did is always measured before the launch. The other
+# campaigns it was sent are counted through the outcome window: the campaign
+# calendar is taken to be the retailer's plan, not a consequence of what the
+# household did after this launch. This is the prototype's rule.
+[covariates]
+groups = ["spend", "behaviour", "history"]
+concurrent_campaigns = "through_outcome_window"
+
+# How the retailer chose the households. The package's documentation does not say.
+[assignment]
+documented = false
+note = "The source does not describe how households were selected for a campaign."
+
+# The primary method is the one the prototype named as primary. The other runs
+# in shadow: it is computed and logged, never published.
+[method]
+estimator = "weighting"
+
+[[shadow_methods]]
+estimator = "regression"
+
+[tolerances]
+placebo_usd = 5.0                 # largest placebo effect, per household over a window, that is treated as none
+min_treated = 50
+min_controls = 50
+min_effective_controls = 50.0     # weighting: Kish effective number of comparison households
+max_control_weight_share = 0.05   # weighting: largest share of the weight one comparison household may carry
+extreme_score = 0.9
+max_treated_extreme_share = 0.10  # share of targeted households with a propensity score above extreme_score
+min_record_campaigns = 5          # campaigns needed before the method's record can vouch for a readout
+interval_level = 0.95
+heterogeneity_level = 0.95        # confidence of the upper bound on how much campaigns differ
+
+[bootstrap]
+replications = 2000
+seed = 20261006
+
+[data]
+closed_days = ["12-25"]           # no sales are recorded on 25 December

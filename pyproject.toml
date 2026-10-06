@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campaign-readout-pipeline"
+version = "0.1.0"
+description = "Campaign incrementality readouts that are published only when their preconditions hold."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Diogo Ribeiro", email = "dfr@esmad.ipp.pt" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scipy>=1.11",
+    "pydantic>=2.6",
+    "pyarrow>=15",
+    "pyreadr>=0.5",
+    "matplotlib>=3.8",
+    "tzdata",  # the snapshot converts timestamps between time zones
+]
+
+[project.urls]
+Repository = "https://github.com/DiogoRibeiro7/campaign-readout-pipeline"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+readout = "readout.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+markers = ["data: needs the pinned source files in data/raw (`readout fetch`); skipped without them"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["prototype"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "NPY"]
+ignore = ["E501"]  # the formatter wraps what can be wrapped; long strings stay whole
+
+[tool.ruff.lint.isort]
+known-first-party = ["readout", "conftest"]

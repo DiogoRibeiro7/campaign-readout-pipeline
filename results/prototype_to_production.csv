@@ -1,0 +1,5 @@
+window,estimator,campaigns,published_by_prototype,pipeline_as_prototype,data_as_of_readout,production_rules,largest_difference_from_published,mean_change_from_data_as_of_readout,largest_change_from_data_as_of_readout,mean_change_from_population_at_launch,largest_change_from_population_at_launch,households_whole_year,fewest_households_as_of_readout,fewest_households_at_launch
+main,regression,16,17.3742,17.3742,17.375,17.3861,0,0.0774704,0.302668,0.0636157,0.32122,2469,2322,2266
+main,weighting,16,-12.7775,-12.7775,-12.9446,-13.013,0,0.167111,0.831536,0.0720797,0.28154,2469,2322,2266
+placebo,regression,16,13.9458,13.9458,13.9803,13.9724,0,0.0711251,0.316701,0.0808934,0.497318,2469,2322,2168
+placebo,weighting,16,-17.5271,-17.5271,-17.6296,-17.697,0,0.13693,0.578989,0.291043,1.78324,2469,2322,2168

@@ -1,0 +1,59 @@
+name: release
+
+# A release is cut by changing the version on main: in pyproject.toml,
+# src/readout/__init__.py and CITATION.cff, which the tests require to agree.
+# This workflow runs the checks, tags that commit and creates the release.
+# Nobody pushes a tag by hand.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - pyproject.toml
+      - src/readout/__init__.py
+      - CITATION.cff
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: python -m pip install -e ".[dev]"
+      - id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="v$(python -c 'import readout; print(readout.__version__)')"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+      # A release is made only from a commit that passes the checks, the version test among them.
+      - if: steps.version.outputs.exists == 'false'
+        run: |
+          ruff check src tests
+          python -m pytest
+          readout schema --out schema
+      - if: steps.version.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.version.outputs.tag }}" \
+            --target "${{ github.sha }}" \
+            --title "${{ steps.version.outputs.tag }}" \
+            --generate-notes \
+            results/RESULTS.md schema/readout.schema.json schema/programme.schema.json
