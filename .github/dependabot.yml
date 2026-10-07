@@ -1,0 +1,13 @@
+# The actions the workflows use. The Python libraries are left alone: the
+# committed results were produced with the versions in constraints.txt, and
+# moving them is a change to be made, and checked, on purpose.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    labels: [ci]
+    groups:
+      actions:
+        patterns: ["*"]

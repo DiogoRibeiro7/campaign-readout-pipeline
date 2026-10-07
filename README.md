@@ -1,5 +1,11 @@
 # campaign-readout-pipeline
 
+[![ci](https://github.com/DiogoRibeiro7/campaign-readout-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/DiogoRibeiro7/campaign-readout-pipeline/actions/workflows/ci.yml)
+[![reproduce](https://github.com/DiogoRibeiro7/campaign-readout-pipeline/actions/workflows/reproduce.yml/badge.svg)](https://github.com/DiogoRibeiro7/campaign-readout-pipeline/actions/workflows/reproduce.yml)
+[![release](https://img.shields.io/github/v/release/DiogoRibeiro7/campaign-readout-pipeline)](https://github.com/DiogoRibeiro7/campaign-readout-pipeline/releases/latest)
+[![python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue)](pyproject.toml)
+[![licence](https://img.shields.io/badge/licence-Apache--2.0-blue)](LICENSE)
+
 A pipeline that estimates what a marketing campaign added to sales, and
 publishes the estimate only when a set of conditions declared in advance holds.
 When one does not hold it publishes a refusal that names it. A refusal is a
@@ -598,6 +604,18 @@ is why both contracts set `documented = false`.
 - Imbens, G. W. (2015). Matching methods in practice: three examples. *Journal of Human Resources*, 50(2), 373-419. Assessing unconfoundedness with the effect on a lagged outcome.
 - Schuirmann, D. J. (1987). A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability. *Journal of Pharmacokinetics and Biopharmaceutics*, 15(6), 657-680.
 - Viechtbauer, W. (2007). Confidence intervals for the amount of heterogeneity in meta-analysis. *Statistics in Medicine*, 26(1), 37-52. The upper bound on how much campaigns differ.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md): how to set up, what to run before a
+pull request, and what a change that moves the results or a rule has to bring
+with it. Vulnerabilities are reported privately, as [SECURITY.md](SECURITY.md)
+describes.
+
+## Citing
+
+[`CITATION.cff`](CITATION.cff) holds the citation. GitHub's *Cite this
+repository* gives it as APA or BibTeX.
 
 ## Licence
 

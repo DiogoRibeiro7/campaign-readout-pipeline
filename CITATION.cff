@@ -10,3 +10,15 @@ authors:
 version: 0.1.0
 license: Apache-2.0
 repository-code: "https://github.com/DiogoRibeiro7/campaign-readout-pipeline"
+abstract: >-
+  A pipeline that estimates what a marketing campaign added to sales, and
+  publishes the estimate only when a set of conditions declared in advance
+  holds. When one does not hold it publishes a refusal that names it.
+keywords:
+  - causal inference
+  - incrementality
+  - marketing measurement
+  - propensity score
+  - placebo test
+  - bootstrap
+  - reproducible research

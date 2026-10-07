@@ -11,7 +11,17 @@ requires-python = ">=3.11"
 license = "Apache-2.0"
 license-files = ["LICENSE"]
 authors = [{ name = "Diogo Ribeiro", email = "dfr@esmad.ipp.pt" }]
+keywords = [
+    "causal-inference",
+    "incrementality",
+    "marketing-measurement",
+    "propensity-score",
+    "placebo-test",
+    "bootstrap",
+    "reproducible-research",
+]
 classifiers = [
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -33,6 +43,8 @@ dependencies = [
 
 [project.urls]
 Repository = "https://github.com/DiogoRibeiro7/campaign-readout-pipeline"
+Issues = "https://github.com/DiogoRibeiro7/campaign-readout-pipeline/issues"
+Changelog = "https://github.com/DiogoRibeiro7/campaign-readout-pipeline/releases"
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.6"]

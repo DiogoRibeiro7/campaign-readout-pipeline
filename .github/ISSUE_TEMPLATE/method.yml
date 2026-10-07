@@ -1,0 +1,22 @@
+name: Method or contract
+description: A question or a proposal about the estimators, the gates, the placebos or a contract rule.
+body:
+  - type: textarea
+    id: subject
+    attributes:
+      label: What it is about
+      description: The part of the method, with a link to the code, the contract or the section of the README where it is described.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or proposal
+      description: A proposal that changes a rule would become a new contract version, not an edit to an existing one.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Papers or other sources it rests on, if any.
