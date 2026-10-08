@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/project-avatar.png" alt="campaign-readout-pipeline project logo" width="160" height="160">
+</p>
+
 # campaign-readout-pipeline
 
 [![ci](https://github.com/DiogoRibeiro7/campaign-readout-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/DiogoRibeiro7/campaign-readout-pipeline/actions/workflows/ci.yml)
