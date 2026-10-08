@@ -1,0 +1,7 @@
+Tool: built-in image generation
+
+Use case: logo-brand.
+Asset type: square project logo for campaign-readout-pipeline.
+Project purpose: Estimates what a marketing campaign added to sales and publishes the estimate only when conditions declared in advance hold. Otherwise it publishes a refusal that names the condition that failed.
+Design direction: An evidence-gated publishing emblem in the style of a restrained woodblock approval stamp: three dark-olive measurement bars stand behind a rectangular vermilion aperture; one clean olive signal line passes through the aperture into open paper. Cream paper, slightly distressed ink edges, strong asymmetric negative space. One compact editorial mark, no words, no megaphone, no checkmark, no decorative border.
+Composition: one finished square image, visually distinctive and readable at 160 pixels, with enough margin for README display. Produce the actual artwork, not a mockup sheet or brand presentation. No watermark. Do not use a navy-and-gold metallic badge aesthetic.
